@@ -73,6 +73,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         href: components + "/tilt-card",
     },
     {
+        title: "Profile Peek",
+        href: components + "/profile-peek",
+        new: true,
+    },
+    {
         title: "Flip Reveal",
         href: components + "/flip-reveal",
     },

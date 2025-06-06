@@ -157,4 +157,16 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        name: "profile-peek",
+        type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/profile-peek.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/profile-peek.tsx",
+            },
+        ],
+    },
 ];

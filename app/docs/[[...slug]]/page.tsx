@@ -59,8 +59,8 @@ export default async function Page(props: PageProps) {
                         <BreadcrumbPage className="text-foreground">{page.title}</BreadcrumbPage>
                     </BreadcrumbItem>
                 </BreadcrumbList>
-                <div className="mt-2 flex items-center justify-between">
-                    <h1 className="text-xl font-semibold sm:mt-3 sm:text-2xl xl:text-3xl">{page.title}</h1>
+                <div className="mt-2 flex items-center justify-between sm:mt-3">
+                    <h1 className="text-xl font-semibold sm:text-2xl xl:text-3xl">{page.title}</h1>
                     <div className="flex items-center gap-2">
                         {pager.prev != null && (
                             <Button asChild size="icon" variant="outline" className="shadow-none">
