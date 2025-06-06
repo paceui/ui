@@ -36,9 +36,10 @@ const data = [
 const Testimonials1 = () => {
     return (
         <div className="relative overflow-hidden">
+            <div className="absolute inset-0 -z-2 bg-white" />
             <div className="absolute inset-0 -z-1 bg-[url(/images/demo/gradient-3.jpg)] bg-bottom opacity-30" />
             <div className="container px-4 py-48 sm:px-6 lg:px-12 xl:px-24 xl:py-64">
-                <p className="text-foreground/70 text-lg font-medium sm:text-center">Soon trusted by many</p>
+                <p className="text-lg font-medium text-black/70 sm:text-center">Soon trusted by many</p>
                 <div className="mt-6 flex items-center -space-x-5 sm:justify-center">
                     {data.map((item, index) => (
                         <ProfilePeek
@@ -47,7 +48,7 @@ const Testimonials1 = () => {
                                 <img
                                     src={item.image}
                                     alt="Avatar"
-                                    className="border-background size-14 cursor-pointer rounded-full border-3 object-cover"
+                                    className="size-14 cursor-pointer rounded-full border-3 border-white object-cover"
                                 />
                             }
                             content={
