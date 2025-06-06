@@ -21,8 +21,29 @@ export const blockSections: IBlockSection[] = [
         title: "Marketing",
         items: [
             {
-                title: "Hero Sections",
+                title: "Testimonials",
                 badge: "new",
+                href: blocks + "/testimonials",
+                demo: (
+                    <div className="flex h-full items-center justify-center -space-x-4 p-6 pe-12 pb-12">
+                        <div className="bg-foreground/10 size-10 rounded-full"></div>
+                        <div className="bg-foreground/10 size-10 rounded-full"></div>
+                        <div className="bg-foreground/10 size-10 rounded-full"></div>
+                        <div className="relative">
+                            <div className="bg-foreground/30 size-10 rounded-full"></div>
+                            <div className="bg-foreground/20 absolute -start-2 -top-2 h-24 w-28 rounded">
+                                <div className="ms-14 mt-4">
+                                    <div className="bg-foreground/15 h-2 w-[70%] rounded"></div>
+                                    <div className="bg-foreground/10 mt-1 h-2 w-[50%] rounded"></div>
+                                </div>
+                                <div className="bg-foreground/10 m-3 mt-6 h-2 w-[70%] rounded p-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                ),
+            },
+            {
+                title: "Hero Sections",
                 href: blocks + "/hero",
                 demo: (
                     <div className="grid h-full grid-cols-2 p-6">
@@ -40,7 +61,6 @@ export const blockSections: IBlockSection[] = [
             },
             {
                 title: "Pricing Sections",
-                badge: "new",
                 href: blocks + "/pricing",
                 demo: (
                     <div className="grid h-full grid-cols-3 gap-4 p-6">
@@ -72,7 +92,6 @@ export const blockSections: IBlockSection[] = [
         items: [
             {
                 title: "Product Filter",
-                badge: "new",
                 href: blocks + "/product-filter",
                 demo: (
                     <div className="p-6">
@@ -94,7 +113,6 @@ export const blockSections: IBlockSection[] = [
             },
             {
                 title: "Product",
-                badge: "new",
                 href: blocks + "/product",
                 demo: (
                     <div className="flex items-center justify-center p-8">

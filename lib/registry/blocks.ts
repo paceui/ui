@@ -79,4 +79,17 @@ export const blockRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        name: "testimonials-1",
+        type: "registry:block",
+        dependencies: ["gsap", "@gsap/react"],
+        registryDependencies: ["https://paceui.com/r/gsap/profile-peek"],
+        files: [
+            {
+                path: "testimonials/testimonials-1.tsx",
+                type: "registry:block",
+                target: "~/blocks/product-filter-1.tsx",
+            },
+        ],
+    },
 ];

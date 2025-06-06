@@ -45,9 +45,11 @@ export const ProfilePeek = ({ trigger, content, className, ...props }: HoverProf
             timeline
                 .to(content, {
                     display: "block",
+                    duration: 0,
                 })
                 .to(component, {
                     zIndex: 10,
+                    duration: 0,
                 })
                 .to(card, {
                     y: 0,
@@ -101,7 +103,9 @@ export const ProfilePeek = ({ trigger, content, className, ...props }: HoverProf
     return (
         <div {...props} ref={componentRef} className={cn("relative z-0 [perspective:800px]", className)}>
             <div ref={cardRef} className="absolute [transform-style:preserve-3d]">
-                <div ref={contentRef}>{content}</div>
+                <div ref={contentRef} style={{ display: "none" }}>
+                    {content}
+                </div>
             </div>
 
             <div className="relative" ref={triggerRef}>
