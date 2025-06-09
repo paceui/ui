@@ -45,6 +45,7 @@ export const blockSections: IBlockSection[] = [
             {
                 title: "Hero Sections",
                 href: blocks + "/hero",
+                badge: "new",
                 demo: (
                     <div className="grid h-full grid-cols-2 p-6">
                         <div className="flex flex-col">

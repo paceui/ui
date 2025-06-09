@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { ClassNameValue } from "tailwind-merge";
 import { Drawer } from "vaul";
 
-import { DiscordIcon, GithubIcon, TwitterIcon } from "@/components/docs/icon";
+import { GithubIcon, TwitterIcon } from "@/components/docs/icon";
 import { Sidebar, SidebarNavItem } from "@/components/docs/layouts";
 import { Logo } from "@/components/docs/logo";
 import { Button } from "@/components/ui/button";
@@ -99,16 +99,16 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                 </div>
             </div>
             <div className="flex items-center">
-                <Button variant={"ghost"} size="icon" asChild aria-label="Github">
+                <Button variant={"ghost"} size="icon" asChild aria-label="Twitter">
                     <Link href={routes.external.twitter} target="_blank">
                         <TwitterIcon className="!size-4" />
                     </Link>
                 </Button>
-                <Button variant={"ghost"} size="icon" asChild aria-label="Github">
-                    <Link href={routes.external.discord} target="_blank">
-                        <DiscordIcon className="!size-5" />
-                    </Link>
-                </Button>
+                {/*<Button variant={"ghost"} size="icon" asChild aria-label="Github">*/}
+                {/*    <Link href={routes.external.discord} target="_blank">*/}
+                {/*        <DiscordIcon className="!size-5" />*/}
+                {/*    </Link>*/}
+                {/*</Button>*/}
                 <Button variant={"ghost"} size="icon" asChild aria-label="Github">
                     <Link href={routes.external.github} target="_blank">
                         <GithubIcon className="!size-4.5" />

@@ -37,6 +37,23 @@ export const blockRegistries: RegistryItem[] = [
         ],
     },
     {
+        name: "hero-3",
+        type: "registry:block",
+        dependencies: ["gsap", "@gsap/react"],
+        registryDependencies: [
+            "https://paceui.com/r/gsap/reveal-on-scroll",
+            "https://paceui.com/r/gsap/reveal-text",
+            "button",
+        ],
+        files: [
+            {
+                path: "hero/hero-3.tsx",
+                type: "registry:block",
+                target: "~/blocks/hero-3.tsx",
+            },
+        ],
+    },
+    {
         name: "pricing-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
