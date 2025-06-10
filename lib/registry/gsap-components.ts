@@ -169,4 +169,16 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        name: "liquid-cursor",
+        type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/liquid-cursor.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/liquid-cursor.tsx",
+            },
+        ],
+    },
 ];

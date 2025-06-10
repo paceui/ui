@@ -1,0 +1,47 @@
+---
+slug: components-liquid-cursor
+title: Liquid Cursor
+description: A smooth, fluid cursor that follows your mouse with gentle stretch and bounce effects.
+---
+
+<DemoCodePreview
+    path="demo/components/liquid-cursor/default.tsx"
+    v0Link="/gsap/liquid-cursor"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli" className="mt-3">
+    <TabsList>
+        <TabsTrigger value="cli">CLI</TabsTrigger>
+        <TabsTrigger value="manual">Manual</TabsTrigger>
+    </TabsList>
+    <TabsContent value="cli" className="mt-4">
+        <InstallationCommand command={`npx shadcn@latest add "~website/r/gsap/liquid-cursor"`} />
+    </TabsContent>
+    <TabsContent value="manual" className="mt-4">
+        <Steps>
+            <Step>
+                Install the following dependencies
+            </Step>
+            <InstallationCommand command="npm install gsap @gsap/react" />
+            <Step>
+                Copy and paste the following code into your project
+            </Step>
+            <CodePreview path='components/gsap/liquid-cursor.tsx' collapsible></CodePreview>
+
+            <Step>
+                Update the import paths to fit your project setup
+            </Step>
+        </Steps>
+    </TabsContent>
+</Tabs>
+
+## Props
+
+### SquashText
+
+| Prop   | Type    | Default |
+|--------|---------|---------|
+| size   | number  | 40      |
+| strong | boolean | false   |

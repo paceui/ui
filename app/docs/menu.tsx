@@ -81,6 +81,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         title: "Flip Reveal",
         href: components + "/flip-reveal",
     },
+    {
+        title: "Liquid Cursor",
+        href: components + "/liquid-cursor",
+        new: true,
+    },
 ];
 
 export const docsSidebarNavItems: SidebarNavItem[] = [
