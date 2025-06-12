@@ -181,4 +181,16 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        name: "liquid-glass",
+        type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/liquid-glass.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/liquid-glass.tsx",
+            },
+        ],
+    },
 ];

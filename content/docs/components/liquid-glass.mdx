@@ -1,0 +1,62 @@
+---
+slug: components-liquid-glass
+title: Liquid Glass
+description: A smooth glass effect with subtle blur, ideal for UI highlights and overlays.
+---
+
+<DemoCodePreview
+    path="demo/components/liquid-glass/default.tsx"
+    v0Link="/gsap/liquid-glass"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli" className="mt-3">
+    <TabsList>
+        <TabsTrigger value="cli">CLI</TabsTrigger>
+        <TabsTrigger value="manual">Manual</TabsTrigger>
+    </TabsList>
+    <TabsContent value="cli" className="mt-4">
+        <InstallationCommand command={`npx shadcn@latest add "~website/r/gsap/liquid-glass"`} />
+    </TabsContent>
+    <TabsContent value="manual" className="mt-4">
+        <Steps>
+            <Step>
+                Install the following dependencies
+            </Step>
+            <InstallationCommand command="npm install gsap @gsap/react" />
+            <Step>
+                Copy and paste the following code into your project
+            </Step>
+            <CodePreview path='components/gsap/liquid-glass.tsx' collapsible></CodePreview>
+
+            <Step>
+                Update the import paths to fit your project setup
+            </Step>
+        </Steps>
+    </TabsContent>
+</Tabs>
+
+## Examples
+
+### Blurred
+
+Increase `blur` for a stronger glass blur effect.
+
+<DemoCodePreview
+    path="demo/components/liquid-glass/blurred.tsx"
+    v0Link="/gsap/liquid-glass"
+/>
+
+## Props
+
+### LiquidGlass
+
+| Prop         | Type         | Default |
+|--------------|--------------|---------|
+| width        | number       | 120     |
+| height       | number       | 120     |
+| borderRadius | number       | 12      |
+| tintOpacity  | number (0-1) | 0.1     |
+| blur         | number       | 2       |
+

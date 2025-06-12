@@ -86,6 +86,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         href: components + "/liquid-cursor",
         new: true,
     },
+    {
+        title: "Liquid Glass",
+        href: components + "/liquid-glass",
+        new: true,
+    },
 ];
 
 export const docsSidebarNavItems: SidebarNavItem[] = [
