@@ -28,7 +28,7 @@ export const Demo = () => {
             <FlipReveal className="grid grid-cols-3 gap-4" keys={[key]} showClass="flex" hideClass="hidden">
                 {Array.from({ length: 9 }).map((_, i) => (
                     <FlipRevealItem
-                        flipKey={i % 2 == 0 ? "even" : "odd"}
+                        flipKey={i % 2 == 1 ? "even" : "odd"}
                         key={i}
                         className="bg-muted flex size-20 items-center justify-center rounded-md sm:size-24">
                         {i + 1}
