@@ -1,5 +1,9 @@
+import Link from "next/link";
+
+import { TwitterIcon } from "@/components/docs/icon";
 import { Footer, Topbar } from "@/components/docs/layouts";
-import { Newsletter } from "@/components/docs/newsletter";
+import { Button } from "@/components/ui/button";
+import { routes } from "@/lib/docs";
 
 import { Demo } from "./components/demo";
 import { Feature } from "./components/feature";
@@ -19,7 +23,18 @@ export default function LandingPage() {
                     <Feature />
                     <Demo />
                     <div className="my-8 flex justify-center lg:my-16 2xl:my-24">
-                        <Newsletter />
+                        <div className="from-muted to-muted/70 flex flex-col items-center justify-center gap-6 rounded-md bg-gradient-to-br p-8 px-16">
+                            <p className="text-center text-xl font-medium">Updates. Previews. First.</p>
+                            <TwitterIcon className="size-9 animate-pulse" />
+                            <Button
+                                size="lg"
+                                asChild
+                                className="shadow-primary/20 h-11 gap-2.5 px-6 !text-base shadow-xl">
+                                <Link href={routes.external.twitter} target="_blank">
+                                    Follow
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>
