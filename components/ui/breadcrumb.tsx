@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Slot } from "@radix-ui/react-slot";
 import { ChevronRightIcon, EllipsisIcon } from "lucide-react";
+import { Slot as SlotPrimitive } from "radix-ui";
 
 import { cn } from "@/lib/utils";
 
@@ -29,7 +29,7 @@ export const BreadcrumbItem = ({ className, ...props }: BreadcrumbItemProps) => 
 export type BreadcrumbLinkProps = React.ComponentProps<"a"> & { asChild?: boolean };
 
 export const BreadcrumbLink = ({ asChild, className, ...props }: BreadcrumbLinkProps) => {
-    const Comp = asChild ? Slot : "a";
+    const Comp = asChild ? SlotPrimitive.Slot : "a";
 
     return <Comp className={cn("hover:text-foreground transition-colors", className)} {...props} />;
 };
