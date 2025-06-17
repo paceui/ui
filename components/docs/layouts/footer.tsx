@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ClassNameValue } from "tailwind-merge";
 
-import { DiscordIcon, GithubIcon, TwitterIcon } from "@/components/docs/icon";
+import { GithubIcon, TwitterIcon } from "@/components/docs/icon";
 import { Button } from "@/components/ui/button";
 import { routes } from "@/lib/docs";
 import { cn } from "@/lib/utils";
@@ -27,11 +27,6 @@ export const Footer = ({ className }: FooterProps) => {
                 <Button variant={"ghost"} size="icon" asChild aria-label="Github">
                     <Link href={routes.external.twitter} target="_blank">
                         <TwitterIcon className="!size-4" />
-                    </Link>
-                </Button>
-                <Button variant={"ghost"} size="icon" asChild aria-label="Github">
-                    <Link href={routes.external.discord} target="_blank">
-                        <DiscordIcon className="!size-5" />
                     </Link>
                 </Button>
                 <Button variant={"ghost"} size="icon" asChild aria-label="Github">

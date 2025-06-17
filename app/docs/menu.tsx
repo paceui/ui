@@ -107,6 +107,11 @@ export const docsSidebarNavItems: SidebarNavItem[] = [
                 title: "Installation",
                 href: base.installation,
             },
+            {
+                title: "MCP",
+                href: base.mcp,
+                new: true,
+            },
         ],
     },
     {

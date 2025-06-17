@@ -3,6 +3,7 @@ export const routes = {
     docs: {
         home: "/docs",
         installation: "/docs/installation",
+        mcp: "/docs/mcp",
         theme: "/docs/theme",
         components: {
             base: "/docs/components",
