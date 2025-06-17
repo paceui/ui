@@ -1,4 +1,6 @@
 {
+    "title": "Scramble Text",
+    "description": "A hover-triggered text effect that scrambles and restores characters with smooth motion.",
     "name": "scramble-text",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

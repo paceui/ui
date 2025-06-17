@@ -1,4 +1,6 @@
 {
+    "title": "Product",
+    "description": "Interactive product cards with smooth transitions, variant options, and purchase actions.",
     "name": "product-1",
     "type": "registry:block",
     "dependencies": ["gsap", "@gsap/react"],

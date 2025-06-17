@@ -1,4 +1,6 @@
 {
+    "title": "Draw Line Text",
+    "description": "A smooth text effect that draws characters as strokes and fills them in—perfect for headers and highlights.",
     "name": "draw-line-text",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

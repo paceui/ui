@@ -1,4 +1,6 @@
 {
+    "title": "Squash Text",
+    "description": "Characters bounce and squash into place with playful, dynamic energy.",
     "name": "squash-text",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

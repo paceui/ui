@@ -1,4 +1,6 @@
 {
+    "title": "Hero Section",
+    "description": "Hero sections to highlight your message and engage users with a clean, bold intro.",
     "name": "hero-2",
     "type": "registry:block",
     "dependencies": ["gsap", "@gsap/react"],

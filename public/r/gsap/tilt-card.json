@@ -1,4 +1,6 @@
 {
+    "title": "Tilt Card",
+    "description": "Interactive 3D tilt card that responds to cursor, adds depth and motion.",
     "name": "tilt-card",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

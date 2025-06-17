@@ -1,4 +1,6 @@
 {
+    "title": "Mouse Wave Text",
+    "description": "Creates a wave-like bounce effect on text as the mouse moves across",
     "name": "mouse-wave-text",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

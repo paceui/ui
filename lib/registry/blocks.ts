@@ -2,6 +2,8 @@ import { type RegistryItem } from "shadcn/registry";
 
 export const blockRegistries: RegistryItem[] = [
     {
+        title: "Hero Section",
+        description: "Hero sections to highlight your message and engage users with a clean, bold intro.",
         name: "hero-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
@@ -20,6 +22,8 @@ export const blockRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Hero Section",
+        description: "Hero sections to highlight your message and engage users with a clean, bold intro.",
         name: "hero-2",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
@@ -37,6 +41,8 @@ export const blockRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Hero Section",
+        description: "Hero sections to highlight your message and engage users with a clean, bold intro.",
         name: "hero-3",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
@@ -54,6 +60,8 @@ export const blockRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Pricing Section",
+        description: "Flexible pricing layouts to showcase your plans clearly and help users choose with confidence.",
         name: "pricing-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
@@ -71,6 +79,8 @@ export const blockRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Product Filters",
+        description: "Filter products by name or category with smooth animated transitions.",
         name: "product-filter-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
@@ -84,6 +94,8 @@ export const blockRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Product",
+        description: "Interactive product cards with smooth transitions, variant options, and purchase actions.",
         name: "product-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
@@ -97,6 +109,8 @@ export const blockRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Testimonials",
+        description: "Minimal block with smooth hover effects to highlight user feedback clearly.",
         name: "testimonials-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],

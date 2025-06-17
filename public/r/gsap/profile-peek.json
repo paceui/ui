@@ -1,4 +1,6 @@
 {
+    "title": "Profile Peek",
+    "description": "Hover to peek profile with smooth reveal, right from the image.",
     "name": "profile-peek",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

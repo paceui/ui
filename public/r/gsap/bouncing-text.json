@@ -1,4 +1,6 @@
 {
+    "title": "Bouncing Text",
+    "description": "A playful animation where characters bounce in sequence across the text.",
     "name": "bouncing-text",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

@@ -2,6 +2,9 @@ import { type RegistryItem } from "shadcn/registry";
 
 export const gsapComponentRegistries: RegistryItem[] = [
     {
+        title: "Distort Text",
+        description:
+            "A responsive text effect that scrambles nearby characters as the cursor moves across a paragraph.",
         name: "distort-text",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -14,6 +17,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Reveal Text",
+        description: "A smooth text reveal animation where each heading reveals related content on interaction.",
         name: "reveal-text",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -26,6 +31,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Scramble Text",
+        description: "A hover-triggered text effect that scrambles and restores characters with smooth motion.",
         name: "scramble-text",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -38,6 +45,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Reveal On Scroll",
+        description: "Animate content into view on scroll with effects like fade, slide, zoom, and blur.",
         name: "reveal-on-scroll",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -50,6 +59,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Bouncing Text",
+        description: "A playful animation where characters bounce in sequence across the text.",
         name: "bouncing-text",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -62,6 +73,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Mouse Wave Text",
+        description: "Creates a wave-like bounce effect on text as the mouse moves across",
         name: "mouse-wave-text",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -74,6 +87,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Squash Text",
+        description: "Characters bounce and squash into place with playful, dynamic energy.",
         name: "squash-text",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -86,6 +101,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Stagger on Scroll",
+        description: "Stagger elements into view with scroll-triggered fade, slide, zoom, or blur effects.",
         name: "stagger-on-scroll",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -98,6 +115,9 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Draw Line Text",
+        description:
+            "A smooth text effect that draws characters as strokes and fills them in—perfect for headers and highlights.",
         name: "draw-line-text",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -110,6 +130,9 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Text Fall Button",
+        description:
+            "A button with dynamic text that falls into place with a smooth, elastic motion on hover or click.",
         name: "text-fall-button",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -122,6 +145,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Tilt Card",
+        description: "Interactive 3D tilt card that responds to cursor, adds depth and motion.",
         name: "tilt-card",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -134,6 +159,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Spring Button",
+        description: "A button that shrinks on press and springs back with bounce.",
         name: "spring-button",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -146,6 +173,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Flip Reveal",
+        description: "Animated container that reveals or hides items using GSAP Flip transitions and keys.",
         name: "flip-reveal",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -158,6 +187,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Profile Peek",
+        description: "Hover to peek profile with smooth reveal, right from the image.",
         name: "profile-peek",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -170,6 +201,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Liquid Cursor",
+        description: "A smooth, fluid cursor that follows your mouse with gentle stretch and bounce effects.",
         name: "liquid-cursor",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -182,6 +215,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Liquid Glass",
+        description: "A smooth glass effect with subtle blur, ideal for UI highlights and overlays.",
         name: "liquid-glass",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],

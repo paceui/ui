@@ -1,4 +1,6 @@
 {
+    "title": "Testimonials",
+    "description": "Minimal block with smooth hover effects to highlight user feedback clearly.",
     "name": "testimonials-1",
     "type": "registry:block",
     "dependencies": ["gsap", "@gsap/react"],

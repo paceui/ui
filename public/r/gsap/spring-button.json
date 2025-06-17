@@ -1,4 +1,6 @@
 {
+    "title": "Spring Button",
+    "description": "A button that shrinks on press and springs back with bounce.",
     "name": "spring-button",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

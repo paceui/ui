@@ -1,4 +1,6 @@
 {
+    "title": "Pricing Section",
+    "description": "Flexible pricing layouts to showcase your plans clearly and help users choose with confidence.",
     "name": "pricing-1",
     "type": "registry:block",
     "dependencies": ["gsap", "@gsap/react"],

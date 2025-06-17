@@ -1,4 +1,6 @@
 {
+    "title": "Distort Text",
+    "description": "A responsive text effect that scrambles nearby characters as the cursor moves across a paragraph.",
     "name": "distort-text",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

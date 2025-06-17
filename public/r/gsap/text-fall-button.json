@@ -1,4 +1,6 @@
 {
+    "title": "Text Fall Button",
+    "description": "A button with dynamic text that falls into place with a smooth, elastic motion on hover or click.",
     "name": "text-fall-button",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

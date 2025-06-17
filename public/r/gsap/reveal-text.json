@@ -1,4 +1,6 @@
 {
+    "title": "Reveal Text",
+    "description": "A smooth text reveal animation where each heading reveals related content on interaction.",
     "name": "reveal-text",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

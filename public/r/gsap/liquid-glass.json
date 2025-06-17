@@ -1,4 +1,6 @@
 {
+    "title": "Liquid Glass",
+    "description": "A smooth glass effect with subtle blur, ideal for UI highlights and overlays.",
     "name": "liquid-glass",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

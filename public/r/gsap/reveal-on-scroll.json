@@ -1,4 +1,6 @@
 {
+    "title": "Reveal On Scroll",
+    "description": "Animate content into view on scroll with effects like fade, slide, zoom, and blur.",
     "name": "reveal-on-scroll",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],
