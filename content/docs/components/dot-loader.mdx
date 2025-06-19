@@ -1,0 +1,70 @@
+---
+slug: components-dot-loader
+title: Dot Loader
+description: A compact 7x7 dot grid loader with smooth animation to visualize frame sequences or loading states in your app.
+---
+
+<DemoCodePreview
+    path="demo/components/dot-loader/default.tsx"
+    v0Link="/gsap/dot-loader"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli" className="mt-3">
+    <TabsList>
+        <TabsTrigger value="cli">CLI</TabsTrigger>
+        <TabsTrigger value="manual">Manual</TabsTrigger>
+    </TabsList>
+    <TabsContent value="cli" className="mt-4">
+        <InstallationCommand command={`npx shadcn@latest add "~website/r/gsap/dot-loader"`} />
+    </TabsContent>
+    <TabsContent value="manual" className="mt-4">
+        <Steps>
+            <Step>
+                Install the following dependencies
+            </Step>
+            <InstallationCommand command="npm install gsap @gsap/react" />
+            <Step>
+                Copy and paste the following code into your project
+            </Step>
+            <CodePreview path='components/gsap/dot-loader.tsx' collapsible></CodePreview>
+
+            <Step>
+                Update the import paths to fit your project setup
+            </Step>
+        </Steps>
+    </TabsContent>
+</Tabs>
+
+## Examples
+
+### Playground
+
+<DemoCodePreview
+    path="demo/components/dot-loader/playground.tsx"
+    v0Link="/gsap/dot-loader"
+/>
+
+### Colorful
+
+<DemoCodePreview
+    path="demo/components/dot-loader/colorful.tsx"
+    v0Link="/gsap/dot-loader"
+/>
+
+<Callout className="mt-6">
+    **Coming Soon:** A loader builder to help you create custom loaders effortlessly.
+</Callout>
+
+
+## Props
+
+### DotLoader
+
+| Prop     | Type       | Default |
+|----------|------------|---------|
+| frames   | number[][] | -       |
+| dotClass | string     | -       |
+| duration | number     | 100     |
+| play     | boolean    | true    |

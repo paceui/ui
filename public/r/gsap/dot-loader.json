@@ -1,0 +1,14 @@
+{
+    "title": "Dot Loader",
+    "description": "A compact 7x7 dot grid loader with smooth animation to visualize frame sequences or loading states in your app",
+    "name": "dot-loader",
+    "type": "registry:ui",
+    "files": [
+        {
+            "path": "gsap/dot-loader.tsx",
+            "type": "registry:ui",
+            "target": "~/components/gsap/dot-loader.tsx",
+            "content": "\"use client\";\n\nimport { ComponentProps, useCallback, useEffect, useRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ntype DotLoaderProps = {\n    frames: number[][];\n    dotClassName?: string;\n    isPlaying?: boolean;\n    duration?: number;\n} & ComponentProps<\"div\">;\n\nexport const DotLoader = ({\n    frames,\n    isPlaying = true,\n    duration = 100,\n    dotClassName,\n    className,\n    ...props\n}: DotLoaderProps) => {\n    const gridRef = useRef<HTMLDivElement>(null);\n    const currentIndex = useRef(0);\n    const interval = useRef<NodeJS.Timeout>(null);\n\n    const setDot = useCallback(\n        (dots: HTMLDivElement[], active: number) => {\n            dots.forEach((dot, index) => {\n                dots[index].classList.toggle(\"active\", frames[active].includes(index));\n\n                // if (frames[active].includes(index)) {\n                //     dot.setAttribute(\"data-active\", \"\");\n                // } else {\n                //     dot.removeAttribute(\"data-active\");\n                // }\n            });\n        },\n        [frames],\n    );\n\n    useEffect(() => {\n        if (isPlaying) {\n            if (currentIndex.current >= frames.length) currentIndex.current = 0;\n            const dotEs = gridRef.current?.children;\n            if (!dotEs) return;\n            const dots = Array.from(dotEs) as HTMLDivElement[];\n            interval.current = setInterval(() => {\n                setDot(dots, currentIndex.current);\n                currentIndex.current = (currentIndex.current + 1) % frames.length;\n            }, duration);\n        } else {\n            if (interval.current) clearInterval(interval.current);\n        }\n\n        return () => {\n            if (interval.current) clearInterval(interval.current);\n        };\n    }, [frames, isPlaying, setDot, duration]);\n\n    return (\n        <div {...props} ref={gridRef} className={cn(\"grid w-fit grid-cols-7 gap-0.5\", className)}>\n            {Array.from({ length: 49 }).map((_, i) => (\n                <div key={i} className={cn(\"h-1.5 w-1.5 rounded-sm\", dotClassName)} />\n            ))}\n        </div>\n    );\n};\n"
+        }
+    ]
+}

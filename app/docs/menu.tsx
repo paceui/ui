@@ -65,6 +65,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         isLabel: true,
     },
     {
+        title: "Dot Loader",
+        href: components + "/dot-loader",
+        new: true,
+    },
+    {
         title: "Draw Line Text",
         href: components + "/draw-line-text",
     },
@@ -75,7 +80,6 @@ export const docsComponentNavItems: SidebarNavItem[] = [
     {
         title: "Profile Peek",
         href: components + "/profile-peek",
-        new: true,
     },
     {
         title: "Flip Reveal",
@@ -84,12 +88,10 @@ export const docsComponentNavItems: SidebarNavItem[] = [
     {
         title: "Liquid Cursor",
         href: components + "/liquid-cursor",
-        new: true,
     },
     {
         title: "Liquid Glass",
         href: components + "/liquid-glass",
-        new: true,
     },
 ];
 

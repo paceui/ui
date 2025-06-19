@@ -228,4 +228,18 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        title: "Dot Loader",
+        description:
+            "A compact 7x7 dot grid loader with smooth animation to visualize frame sequences or loading states in your app",
+        name: "dot-loader",
+        type: "registry:ui",
+        files: [
+            {
+                path: "gsap/dot-loader.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/dot-loader.tsx",
+            },
+        ],
+    },
 ];
