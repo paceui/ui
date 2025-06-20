@@ -9,6 +9,8 @@ type DotLoaderProps = {
     dotClassName?: string;
     isPlaying?: boolean;
     duration?: number;
+    repeatCount?: number;
+    onComplete?: () => void;
 } & ComponentProps<"div">;
 
 export const DotLoader = ({
@@ -17,35 +19,49 @@ export const DotLoader = ({
     duration = 100,
     dotClassName,
     className,
+    repeatCount = -1,
+    onComplete,
     ...props
 }: DotLoaderProps) => {
     const gridRef = useRef<HTMLDivElement>(null);
     const currentIndex = useRef(0);
+    const repeats = useRef(0);
     const interval = useRef<NodeJS.Timeout>(null);
 
-    const setDot = useCallback(
-        (dots: HTMLDivElement[], active: number) => {
-            dots.forEach((dot, index) => {
-                dots[index].classList.toggle("active", frames[active].includes(index));
+    const applyFrameToDots = useCallback(
+        (dots: HTMLDivElement[], frameIndex: number) => {
+            const frame = frames[frameIndex];
+            if (!frame) return;
 
-                // if (frames[active].includes(index)) {
-                //     dot.setAttribute("data-active", "");
-                // } else {
-                //     dot.removeAttribute("data-active");
-                // }
+            dots.forEach((dot, index) => {
+                dot.classList.toggle("active", frame.includes(index));
             });
         },
         [frames],
     );
 
     useEffect(() => {
+        currentIndex.current = 0;
+        repeats.current = 0;
+    }, [frames]);
+
+    useEffect(() => {
         if (isPlaying) {
-            if (currentIndex.current >= frames.length) currentIndex.current = 0;
-            const dotEs = gridRef.current?.children;
-            if (!dotEs) return;
-            const dots = Array.from(dotEs) as HTMLDivElement[];
+            if (currentIndex.current >= frames.length) {
+                currentIndex.current = 0;
+            }
+            const dotElements = gridRef.current?.children;
+            if (!dotElements) return;
+            const dots = Array.from(dotElements) as HTMLDivElement[];
             interval.current = setInterval(() => {
-                setDot(dots, currentIndex.current);
+                applyFrameToDots(dots, currentIndex.current);
+                if (currentIndex.current + 1 >= frames.length) {
+                    if (repeatCount != -1 && repeats.current + 1 >= repeatCount) {
+                        clearInterval(interval.current!);
+                        onComplete?.();
+                    }
+                    repeats.current++;
+                }
                 currentIndex.current = (currentIndex.current + 1) % frames.length;
             }, duration);
         } else {
@@ -55,7 +71,7 @@ export const DotLoader = ({
         return () => {
             if (interval.current) clearInterval(interval.current);
         };
-    }, [frames, isPlaying, setDot, duration]);
+    }, [frames, isPlaying, applyFrameToDots, duration, repeatCount, onComplete]);
 
     return (
         <div {...props} ref={gridRef} className={cn("grid w-fit grid-cols-7 gap-0.5", className)}>
