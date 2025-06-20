@@ -242,4 +242,18 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        title: "Dot Flow",
+        description: "Visually expressive status updates with animated dots and smooth sliding text transitions",
+        name: "dot-flow",
+        type: "registry:ui",
+        registryDependencies: ["https://paceui.com/r/gsap/dot-loader", "gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/dot-flow.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/dot-flow.tsx",
+            },
+        ],
+    },
 ];
