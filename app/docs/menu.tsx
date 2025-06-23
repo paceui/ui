@@ -75,6 +75,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         new: true,
     },
     {
+        title: "Flow Builder",
+        href: components + "/flow-builder",
+        new: true,
+    },
+    {
         title: "Draw Line Text",
         href: components + "/draw-line-text",
     },

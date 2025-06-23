@@ -44,6 +44,10 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                     title: "Blocks",
                     href: routes.blocks.base,
                 },
+                {
+                    title: "Flow Builder",
+                    href: routes.docs.components.base + "/flow-builder",
+                },
             ],
         },
         ...menuItems,
@@ -78,7 +82,8 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                 <div className="hidden gap-2 md:inline-flex md:gap-6">
                     <Link
                         className={cn("text-foreground/80 hover:text-foreground text-[15px] transition-all", {
-                            "text-foreground font-medium": pathname.includes("docs"),
+                            "text-foreground font-medium":
+                                pathname.includes("docs") && !pathname.includes("flow-builder"),
                         })}
                         href={routes.docs.components.base}>
                         Components
@@ -92,8 +97,19 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                         )}
                         href={routes.blocks.base}>
                         Blocks
+                        <div className="rounded-full border px-1.5 py-0.5 text-xs/none font-medium">New</div>
+                    </Link>
+                    <Link
+                        className={cn(
+                            "text-foreground/80 hover:text-foreground flex items-center gap-1.5 text-[15px] transition-all",
+                            {
+                                "text-foreground font-medium": pathname.includes("/flow-builder"),
+                            },
+                        )}
+                        href={routes.docs.components.base + "/flow-builder"}>
+                        Flow Builder
                         <div className="bg-secondary text-secondary-foreground rounded-full px-1.5 py-0.5 text-xs/none font-medium shadow-xs">
-                            New
+                            Trending
                         </div>
                     </Link>
                 </div>
