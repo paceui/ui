@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "@gsap/react": "^2.1.2",
+        "@hello-pangea/dnd": "^18.0.1",
         "@shikijs/themes": "^3.4.2",
         "@shikijs/transformers": "^3.4.2",
         "@vercel/analytics": "^1.5.0",

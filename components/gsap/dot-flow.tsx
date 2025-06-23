@@ -14,9 +14,10 @@ export type DotFlowProps = {
         duration?: number;
         repeatCount?: number;
     }[];
+    isPlaying?: boolean;
 };
 
-export const DotFlow = ({ items }: DotFlowProps) => {
+export const DotFlow = ({ items, isPlaying = true }: DotFlowProps) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const textRef = useRef<HTMLDivElement>(null);
     const [index, setIndex] = useState(0);
@@ -70,6 +71,7 @@ export const DotFlow = ({ items }: DotFlowProps) => {
                 frames={items[index].frames}
                 onComplete={next}
                 className="gap-px"
+                isPlaying={isPlaying}
                 repeatCount={items[index].repeatCount ?? 1}
                 duration={items[index].duration ?? 150}
                 dotClassName="bg-white/15 [&.active]:bg-white size-1"
