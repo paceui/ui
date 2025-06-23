@@ -18,6 +18,10 @@ interface PageProps {
     }>;
 }
 
+export async function generateStaticParams(): Promise<{ slug?: string[] }[]> {
+    return docs.map(({ path }) => ({ slug: [path] }));
+}
+
 export async function generateMetadata(props: PageProps): Promise<Metadata> {
     const params = await props.params;
     const url = `docs${params.slug ? "/" : ""}${(params.slug ?? []).join("/")}`;

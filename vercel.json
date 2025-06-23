@@ -1,0 +1,13 @@
+{
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, s-maxage=21600, stale-while-revalidate=21600"
+                }
+            ]
+        }
+    ]
+}
