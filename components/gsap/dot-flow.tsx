@@ -37,6 +37,11 @@ export const DotFlow = ({ items, isPlaying = true }: DotFlowProps) => {
         });
     }, [textIndex, items]);
 
+    useEffect(() => {
+        setIndex(0);
+        setTextIndex(0);
+    }, [items]);
+
     const next = contextSafe(() => {
         const el = containerRef.current;
         if (!el) return;
@@ -68,17 +73,17 @@ export const DotFlow = ({ items, isPlaying = true }: DotFlowProps) => {
     return (
         <div className="flex items-center gap-4 rounded bg-black px-4 py-3">
             <DotLoader
-                frames={items[index].frames}
+                frames={items[index]?.frames ?? []}
                 onComplete={next}
                 className="gap-px"
                 isPlaying={isPlaying}
-                repeatCount={items[index].repeatCount ?? 1}
-                duration={items[index].duration ?? 150}
+                repeatCount={items[index]?.repeatCount ?? 1}
+                duration={items[index]?.duration ?? 150}
                 dotClassName="bg-white/15 [&.active]:bg-white size-1"
             />
             <div ref={containerRef} className="relative">
                 <div ref={textRef} className="inline-block text-lg font-medium whitespace-nowrap text-white">
-                    {items[textIndex].title}
+                    {items[textIndex]?.title}
                 </div>
             </div>
         </div>
