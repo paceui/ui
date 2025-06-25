@@ -1,10 +1,10 @@
-import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { Fira_Code, Work_Sans } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import React from "react";
 
+import { Analytics } from "@/components/docs/Analytics";
 import { cn } from "@/lib/utils";
 import "@/styles/app.css";
 
