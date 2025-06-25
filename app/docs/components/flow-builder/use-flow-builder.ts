@@ -66,10 +66,20 @@ export const useFlowBuilder = () => {
     }, [flows]);
 
     const addNewFlow = () => {
-        const title = `Untitled ${flows.length + 1}`;
-        const newFlow = { title, frames: [[]] };
+        const baseTitle = "Untitled";
+        let index = 1;
+        let newTitle = `${baseTitle} ${index}`;
+
+        const existingTitles = new Set(flows.map((flow) => flow.title));
+
+        while (existingTitles.has(newTitle)) {
+            index++;
+            newTitle = `${baseTitle} ${index}`;
+        }
+
+        const newFlow = { title: newTitle, frames: [[]] };
         setFlows((prev) => [...prev, newFlow]);
-        setCurrentFlow(title);
+        setCurrentFlow(newTitle);
     };
 
     const moveCurrentFlow = (dir: "up" | "down") => {
@@ -95,18 +105,44 @@ export const useFlowBuilder = () => {
     const duplicateFlow = (index: number) => {
         const flow = flows[index];
         if (!flow) return;
+
+        const baseTitle = `${flow.title} Copy`;
+        const existingTitles = new Set(flows.map((f) => f.title));
+
+        let copyIndex = 1;
+        let newTitle = baseTitle;
+
+        while (existingTitles.has(newTitle)) {
+            copyIndex++;
+            newTitle = `${baseTitle} ${copyIndex}`;
+        }
+
         const newFlow = {
-            title: `${flow.title} Copy`,
+            title: newTitle,
             frames: flow.frames.map((f) => [...f]),
         };
+
         setFlows((prev) => {
             const updated = [...prev];
             updated.splice(index + 1, 0, newFlow);
             return updated;
         });
+
+        setCurrentFlow(newTitle);
     };
 
     const deleteFlow = (index: number) => {
+        if (flows.length <= 1) {
+            setFlows([
+                {
+                    title: "Untitled",
+                    frames: [[]],
+                },
+            ]);
+            setCurrentFlow("Untitled");
+            return;
+        }
+
         setFlows((prev) => {
             if (prev.length <= 1) return prev;
             const updated = [...prev];
