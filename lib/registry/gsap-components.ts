@@ -256,4 +256,32 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        title: "Rolling Number",
+        description: "Animate numbers with smooth vertical digit transitions",
+        name: "rolling-number",
+        type: "registry:ui",
+        registryDependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/rolling-number.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/rolling-number.tsx",
+            },
+        ],
+    },
+    {
+        title: "Github Star Counter",
+        description: "Display live GitHub star count for any public repository",
+        name: "github-star-counter",
+        type: "registry:ui",
+        registryDependencies: ["https://paceui.com/r/gsap/rolling-number", "gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/github-star-counter.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/github-star-counter.tsx",
+            },
+        ],
+    },
 ];

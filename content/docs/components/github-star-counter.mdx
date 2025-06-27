@@ -1,0 +1,46 @@
+---
+slug: components-github-star-counter
+title: Github Star Counter
+description: Display live GitHub star count for any public repository
+---
+
+<DemoCodePreview
+    path="demo/components/github-star-counter/default.tsx"
+    v0Link="/gsap/github-star-counter"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli" className="mt-3">
+    <TabsList>
+        <TabsTrigger value="cli">CLI</TabsTrigger>
+        <TabsTrigger value="manual">Manual</TabsTrigger>
+    </TabsList>
+    <TabsContent value="cli" className="mt-4">
+        <InstallationCommand command={`npx shadcn@latest add "~website/r/gsap/github-star-counter"`} />
+    </TabsContent>
+    <TabsContent value="manual" className="mt-4">
+        <Steps>
+            <Step>
+                Install the following dependencies
+            </Step>
+            <InstallationCommand command="npm install gsap @gsap/react" />
+            <Step>
+                Copy and paste the following code into your project
+            </Step>
+            <CodePreview path='components/gsap/github-star-counter.tsx' collapsible></CodePreview>
+
+            <Step>
+                Update the import paths to fit your project setup
+            </Step>
+        </Steps>
+    </TabsContent>
+</Tabs>
+
+## Props
+
+### GithubStarCounter
+
+| Prop | Type   | Default   |
+|------|--------|-----------|
+| repo | string | shadcn/ui |

@@ -16,9 +16,19 @@ export const Footer = ({ className }: FooterProps) => {
     return (
         <div
             className={cn("flex flex-wrap items-center justify-between py-3 max-sm:justify-center md:py-4", className)}>
-            <p className="max-sm:text-center max-sm:text-sm">
-                The source code is available on{" "}
-                <Link className="hover:underline" href={routes.external.github} target="_blank">
+            <p className="text-foreground/80 max-sm:text-center max-sm:text-sm">
+                Built by{" "}
+                <Link
+                    className="text-foreground font-medium hover:underline"
+                    href={routes.external.denishX}
+                    target="_blank">
+                    Denish
+                </Link>
+                . The source code is available on{" "}
+                <Link
+                    className="text-foreground font-medium hover:underline"
+                    href={routes.external.github}
+                    target="_blank">
                     GitHub
                 </Link>
                 .

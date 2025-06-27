@@ -16,5 +16,6 @@ export const routes = {
         github: "https://github.com/paceui/paceui",
         discord: "https://discord.com/invite/RS2fj5CqAM",
         twitter: "https://x.com/paceui_",
+        denishX: "https://x.com/withden_",
     },
 };

@@ -65,14 +65,17 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         isLabel: true,
     },
     {
+        title: "Github Star Counter",
+        href: components + "/github-star-counter",
+        new: true,
+    },
+    {
         title: "Dot Loader",
         href: components + "/dot-loader",
-        new: true,
     },
     {
         title: "Dot Flow",
         href: components + "/dot-flow",
-        new: true,
     },
     {
         title: "Flow Builder",

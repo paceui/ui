@@ -1,9 +1,9 @@
 import { ArrowRightIcon, BlocksIcon, ChevronRightIcon, FlameIcon, ShapesIcon } from "lucide-react";
 import Link from "next/link";
 
+import { GithubStarCounter } from "@/components/gsap/github-star-counter";
 import { RevealText } from "@/components/gsap/reveal-text";
 import { SpringButton } from "@/components/gsap/spring-button";
-import { TextFallButton } from "@/components/gsap/text-fall-button";
 import { TiltCard } from "@/components/gsap/tilt-card";
 import { Button } from "@/components/ui/button";
 import { routes } from "@/lib/docs";
@@ -16,11 +16,11 @@ export const Hero = () => {
         <div className="relative mt-4 flex justify-center md:pt-8 lg:pt-16 xl:pt-24 2xl:pt-32">
             <div className="flex max-w-3xl flex-col items-center text-center">
                 <Link
-                    href={routes.docs.components.base + "/flow-builder"}
-                    className="flex items-center gap-2 rounded-full border py-1 ps-2 pe-3 text-sm hover:shadow">
+                    href={routes.docs.components.base + "/github-star-counter"}
+                    className="flex items-center gap-2 rounded-full border py-1 ps-2.5 pe-3 text-sm hover:shadow">
                     <FlameIcon className="size-4 text-orange-500" />
-                    <hr className="h-full w-px border-e" />
-                    <p>New: Flow Builder</p>
+                    <hr className="h-full w-px border-e border-dashed" />
+                    <p className="font-medium">Github Star Counter</p>
                 </Link>
                 <div className="mt-4 text-2xl leading-[1.15] font-[580] tracking-tight sm:text-4xl md:text-5xl 2xl:text-6xl">
                     <p>
@@ -68,9 +68,7 @@ export const Hero = () => {
                         Pop & Press
                     </SpringButton>
                     <hr className="h-6 border-s border-dashed" />
-                    <TextFallButton className="cursor-pointer overflow-hidden rounded border px-4 py-2 font-medium">
-                        Let It Drop
-                    </TextFallButton>
+                    <GithubStarCounter repo="paceui/paceui" defaultStar="000" />
                 </div>
                 <hr className="border-t border-dashed px-24" />
                 <ProductDemo />
