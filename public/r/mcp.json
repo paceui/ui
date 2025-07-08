@@ -267,6 +267,14 @@
             ]
         },
         {
+            "title": "Swap",
+            "description": "A dynamic content swapper with smooth animations and flexible visual effects",
+            "name": "swap",
+            "type": "registry:ui",
+            "registryDependencies": ["gsap", "@gsap/react"],
+            "files": [{ "path": "gsap/swap.tsx", "type": "registry:ui", "target": "~/components/gsap/swap.tsx" }]
+        },
+        {
             "title": "Hero Section",
             "description": "Hero sections to highlight your message and engage users with a clean, bold intro.",
             "name": "hero-1",
@@ -305,6 +313,20 @@
                 "button"
             ],
             "files": [{ "path": "hero/hero-3.tsx", "type": "registry:block", "target": "~/blocks/hero-3.tsx" }]
+        },
+        {
+            "title": "Hero Section",
+            "description": "Engaging hero with dynamic AI-focused CTAs and smooth animated content transitions.",
+            "name": "hero-4",
+            "type": "registry:block",
+            "dependencies": ["gsap", "@gsap/react"],
+            "registryDependencies": [
+                "https://paceui.com/r/gsap/reveal-on-scroll",
+                "https://paceui.com/r/gsap/swap",
+                "button",
+                "avatar"
+            ],
+            "files": [{ "path": "hero/hero-4.tsx", "type": "registry:block", "target": "~/blocks/hero-4.tsx" }]
         },
         {
             "title": "Pricing Section",

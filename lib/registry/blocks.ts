@@ -60,6 +60,26 @@ export const blockRegistries: RegistryItem[] = [
         ],
     },
     {
+        title: "Hero Section",
+        description: "Engaging hero with dynamic AI-focused CTAs and smooth animated content transitions.",
+        name: "hero-4",
+        type: "registry:block",
+        dependencies: ["gsap", "@gsap/react"],
+        registryDependencies: [
+            "https://paceui.com/r/gsap/reveal-on-scroll",
+            "https://paceui.com/r/gsap/swap",
+            "button",
+            "avatar",
+        ],
+        files: [
+            {
+                path: "hero/hero-4.tsx",
+                type: "registry:block",
+                target: "~/blocks/hero-4.tsx",
+            },
+        ],
+    },
+    {
         title: "Pricing Section",
         description: "Flexible pricing layouts to showcase your plans clearly and help users choose with confidence.",
         name: "pricing-1",
