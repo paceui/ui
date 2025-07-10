@@ -5,55 +5,57 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { RevealOnScroll } from "@/components/gsap/reveal-on-scroll";
+import { RevealText } from "@/components/gsap/reveal-text";
 import { Swap } from "@/components/gsap/swap";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
-const Title = () => {
-    const avatars = ["https://github.com/shadcn.png", "https://github.com/leerob.png", "https://github.com/rauchg.png"];
+const Customers = () => {
+    const avatars = [
+        "https://github.com/vercel.png",
+        "https://github.com/shadcn.png",
+        "https://github.com/tailwindcss.png",
+        "https://github.com/rauchg.png",
+        "https://github.com/lucide-icons.png",
+        "https://github.com/greensock.png",
+        "https://github.com/radix-ui.png",
+        "https://github.com/nextjs.png",
+    ];
 
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrent((current) => current + 1);
-        }, 4000);
+            setCurrent((current) => current + 3);
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <p className="text-center text-2xl leading-normal font-semibold tracking-tight sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl">
-            If you’re starting a project,
-            <br />
-            Discover
-            <span className="mx-3 mb-2 inline-flex items-center gap-2 self-center align-middle md:mx-4 lg:gap-2.5 xl:mx-5 xl:mb-2.5">
-                <Swap state={current} effects={["opacity", "blur"]} duration={0.8}>
-                    {(state) => (
-                        <Avatar className="size-8 md:size-12 xl:size-16">
-                            <AvatarImage src={avatars[(state + 2) % 3]} alt="@github" />
-                        </Avatar>
-                    )}
-                </Swap>
-                <Swap state={current} effects={["opacity", "blur"]} duration={0.8}>
-                    {(state) => (
-                        <Avatar className="size-8 md:size-12 xl:size-16">
-                            <AvatarImage src={avatars[(state + 1) % 3]} alt="@github" />
-                        </Avatar>
-                    )}
-                </Swap>
-                <Swap state={current} effects={["opacity", "blur"]} duration={0.8}>
-                    {(state) => (
-                        <Avatar className="size-8 md:size-12 xl:size-16">
-                            <AvatarImage src={avatars[state % 3]} alt="@github" />
-                        </Avatar>
-                    )}
-                </Swap>
-            </span>
-            innovations
-            <br />
-            that redefine how we build
-        </p>
+        <div className="flex -space-x-3.5 *:transition-all *:duration-300 *:hover:-translate-y-1">
+            <Swap state={current} effects={["opacity", "blur"]} duration={0.8}>
+                {(state) => (
+                    <Avatar className="size-8 xl:size-10">
+                        <AvatarImage src={avatars[state % avatars.length]} alt="@github" />
+                    </Avatar>
+                )}
+            </Swap>
+            <Swap state={current} effects={["opacity", "blur"]} duration={0.8}>
+                {(state) => (
+                    <Avatar className="size-8 xl:size-10">
+                        <AvatarImage src={avatars[(state + 1) % avatars.length]} alt="@github" />
+                    </Avatar>
+                )}
+            </Swap>
+            <Swap state={current} effects={["opacity", "blur"]} duration={0.8}>
+                {(state) => (
+                    <Avatar className="size-8 xl:size-10">
+                        <AvatarImage src={avatars[(state + 2) % avatars.length]} alt="@github" />
+                    </Avatar>
+                )}
+            </Swap>
+        </div>
     );
 };
 
@@ -82,12 +84,39 @@ const Hero4 = () => {
             </div>
             <div className="container pt-4 sm:pt-8 lg:pt-12 2xl:pt-16">
                 <div className="flex items-center justify-center">
-                    <div className="max-w-4xl">
-                        <Title />
+                    <div className="max-w-3xl">
+                        <RevealText type="lines" gsapVars={{ filter: "blur(8px)", duration: 1.5, stagger: 0.15 }}>
+                            <p className="text-center text-2xl leading-tight font-semibold tracking-tight sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl">
+                                Think Smarter. Work Faster. Achieve More.
+                            </p>
+                        </RevealText>
+
+                        <RevealText
+                            type="lines"
+                            className="mt-4 lg:mt-6"
+                            gsapVars={{ filter: "blur(8px)", duration: 1.5, stagger: 0.15, delay: 0.25 }}>
+                            <p className="text-foreground/70 text-center text-sm leading-snug font-medium md:text-base lg:text-lg">
+                                From thoughtful UI states to ready-to-use task flows, everything you need to design
+                                smarter agentic apps and future-proof your product
+                            </p>
+                        </RevealText>
                         <RevealOnScroll
                             effect="blurIn"
-                            className="mt-8 flex items-center justify-center gap-4 md:gap-6 xl:mt-16"
+                            className="mt-6 flex items-center justify-center gap-2 md:mt-8 xl:mt-10"
                             toVars={{ duration: 1, delay: 0.5 }}>
+                            <Customers />
+
+                            <div>
+                                <p className="font-medium">12k+</p>
+                                <p className="text-muted-foreground line-clamp-1 text-sm leading-none max-sm:text-xs">
+                                    Trusted by teams and businesses
+                                </p>
+                            </div>
+                        </RevealOnScroll>
+                        <RevealOnScroll
+                            effect="blurIn"
+                            className="mt-8 flex items-center justify-center gap-4 md:gap-6 xl:mt-12"
+                            toVars={{ duration: 1, delay: 0.75 }}>
                             <Button
                                 size="lg"
                                 variant="outline"
@@ -115,7 +144,7 @@ const Hero4 = () => {
                 <RevealOnScroll
                     effect="blurIn"
                     className="absolute start-1/2 top-64 -z-2 h-180 w-220 -translate-x-1/2 skew-x-14 -skew-y-3 rounded border"
-                    toVars={{ delay: 0.25 }}
+                    toVars={{ delay: 1 }}
                     scrollTriggerVars={{
                         start: "top 100%",
                     }}>
@@ -123,7 +152,7 @@ const Hero4 = () => {
                 </RevealOnScroll>
                 <RevealOnScroll
                     effect="blurIn"
-                    toVars={{ delay: 0.5 }}
+                    toVars={{ delay: 1.25 }}
                     className="bg-background absolute start-3/5 top-20 -z-1 h-180 w-240 -translate-x-1/2 skew-x-14 -skew-y-3 rounded border shadow-lg sm:top-28 xl:top-36">
                     <img src="/images/demo/hero-1.jpg" alt="Hero" />
                 </RevealOnScroll>

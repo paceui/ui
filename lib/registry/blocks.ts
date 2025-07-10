@@ -67,6 +67,7 @@ export const blockRegistries: RegistryItem[] = [
         dependencies: ["gsap", "@gsap/react"],
         registryDependencies: [
             "https://paceui.com/r/gsap/reveal-on-scroll",
+            "https://paceui.com/r/gsap/reveal-text",
             "https://paceui.com/r/gsap/swap",
             "button",
             "avatar",
