@@ -1,0 +1,47 @@
+---
+slug: components-modal-selector
+title: Modal Selector
+description: AI-focused model selector with preview, tooltips, and capability indicators built-in.
+---
+
+<DemoCodePreview
+    path="demo/components/modal-selector/default.tsx"
+    v0Link="/gsap/modal-selector"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli" className="mt-3">
+    <TabsList>
+        <TabsTrigger value="cli">CLI</TabsTrigger>
+        <TabsTrigger value="manual">Manual</TabsTrigger>
+    </TabsList>
+    <TabsContent value="cli" className="mt-4">
+        <InstallationCommand command={`npx shadcn@latest add "~website/r/ai/modal-selector"`} />
+    </TabsContent>
+    <TabsContent value="manual" className="mt-4">
+        <Steps>
+            <Step>
+                Install the following dependencies
+            </Step>
+            <InstallationCommand command="npm install gsap @gsap/react" />
+            <Step>
+                Copy and paste the following code into your project
+            </Step>
+            <CodePreview path='components/ai/modal-selector.tsx' collapsible></CodePreview>
+
+            <Step>
+                Update the import paths to fit your project setup
+            </Step>
+        </Steps>
+    </TabsContent>
+</Tabs>
+
+## Props
+
+### ModalSelectorProps
+
+| Prop             | Type          | Default |
+|------------------|---------------|---------|
+| showCapabilities | boolean       | true    |
+| showDescription  | boolean       | true    |

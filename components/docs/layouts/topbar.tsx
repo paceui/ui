@@ -106,8 +106,8 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                                 "text-foreground font-medium": pathname.includes("/flow-builder"),
                             },
                         )}
-                        href={routes.docs.components.base + "/flow-builder"}>
-                        Flow Builder
+                        href={routes.docs.components.base + "/modal-selector"}>
+                        AI ToolKit
                         <div className="bg-secondary text-secondary-foreground rounded-full px-1.5 py-0.5 text-xs/none font-medium shadow-xs">
                             Trending
                         </div>
@@ -120,11 +120,6 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                         <TwitterIcon className="!size-4" />
                     </Link>
                 </Button>
-                {/*<Button variant={"ghost"} size="icon" asChild aria-label="Github">*/}
-                {/*    <Link href={routes.external.discord} target="_blank">*/}
-                {/*        <DiscordIcon className="!size-5" />*/}
-                {/*    </Link>*/}
-                {/*</Button>*/}
                 <Button variant={"ghost"} size="icon" asChild aria-label="Github">
                     <Link href={routes.external.github} target="_blank">
                         <GithubIcon className="!size-4.5" />

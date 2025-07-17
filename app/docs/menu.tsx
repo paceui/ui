@@ -9,6 +9,15 @@ const components = base.components.base;
 
 export const docsComponentNavItems: SidebarNavItem[] = [
     {
+        title: "AI Toolkit",
+        isLabel: true,
+    },
+    {
+        title: "Modal Selector",
+        href: components + "/modal-selector",
+        new: true,
+    },
+    {
         title: "Text based",
         isLabel: true,
     },
@@ -67,7 +76,6 @@ export const docsComponentNavItems: SidebarNavItem[] = [
     {
         title: "Github Star Counter",
         href: components + "/github-star-counter",
-        new: true,
     },
     {
         title: "Dot Loader",
@@ -80,7 +88,6 @@ export const docsComponentNavItems: SidebarNavItem[] = [
     {
         title: "Flow Builder",
         href: components + "/flow-builder",
-        new: true,
     },
     {
         title: "Draw Line Text",
@@ -125,7 +132,6 @@ export const docsSidebarNavItems: SidebarNavItem[] = [
             {
                 title: "MCP",
                 href: base.mcp,
-                new: true,
             },
         ],
     },

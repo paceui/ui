@@ -77,8 +77,8 @@ const SidebarNavItem = ({ item, pathname, index }: { item: SidebarNavItem; pathn
     if (item.isLabel) {
         return (
             <p
-                className={cn("text-muted-foreground ms-2 font-medium", {
-                    "mt-3.5": index != 0,
+                className={cn("ms-2.5 mt-1 font-medium", {
+                    "mt-4": index != 0,
                 })}>
                 {item.title}
             </p>
@@ -91,7 +91,7 @@ const SidebarNavItem = ({ item, pathname, index }: { item: SidebarNavItem; pathn
             className={cn("border-0", {
                 "opacity-70": item.comingSoon,
             })}>
-            <AccordionTrigger className="py-2 pe-2 hover:no-underline [&>svg]:opacity-0 [&>svg]:transition-all group-hover/arrow:[&>svg]:opacity-100">
+            <AccordionTrigger className="text-foreground/75 cursor-pointer py-2 pe-2 hover:no-underline [&>svg]:opacity-0 [&>svg]:transition-all group-hover/arrow:[&>svg]:opacity-100">
                 <div className="flex grow items-center gap-1.5">
                     {item.icon && <Slot className="text-foreground/80 size-4">{item.icon}</Slot>}
                     {item.title}
@@ -109,9 +109,12 @@ const SidebarNavItem = ({ item, pathname, index }: { item: SidebarNavItem; pathn
         </AccordionItem>
     ) : (
         <Link
-            className={cn("hover:bg-foreground/5 flex h-7.5 items-center gap-2 rounded px-2.5 transition-all", {
-                "bg-foreground/5": isActive,
-            })}
+            className={cn(
+                "hover:bg-foreground/5 text-foreground/75 flex h-7.5 items-center gap-2 rounded px-2.5 transition-all",
+                {
+                    "bg-foreground/5": isActive,
+                },
+            )}
             href={item.href ?? "#"}>
             {item.icon && <Slot className="size-4">{item.icon}</Slot>}
             {item.title}

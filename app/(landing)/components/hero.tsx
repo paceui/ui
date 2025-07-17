@@ -16,11 +16,11 @@ export const Hero = () => {
         <div className="relative mt-4 flex justify-center md:pt-8 lg:pt-16 xl:pt-24 2xl:pt-32">
             <div className="flex max-w-3xl flex-col items-center text-center">
                 <Link
-                    href={routes.docs.components.base + "/github-star-counter"}
+                    href={routes.docs.components.base + "/modal-selector"}
                     className="flex items-center gap-2 rounded-full border py-1 ps-2.5 pe-3 text-sm hover:shadow">
                     <FlameIcon className="size-4 text-orange-500" />
                     <hr className="h-full w-px border-e border-dashed" />
-                    <p className="font-medium">Github Star Counter</p>
+                    <p className="font-medium">AI Toolkit</p>
                 </Link>
                 <div className="mt-4 text-2xl leading-[1.15] font-[580] tracking-tight sm:text-4xl md:text-5xl 2xl:text-6xl">
                     <p>

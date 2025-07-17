@@ -3,7 +3,7 @@
     "description": "A dynamic content swapper with smooth animations and flexible visual effects",
     "name": "swap",
     "type": "registry:ui",
-    "registryDependencies": ["gsap", "@gsap/react"],
+    "dependencies": ["gsap", "@gsap/react"],
     "files": [
         {
             "path": "gsap/swap.tsx",

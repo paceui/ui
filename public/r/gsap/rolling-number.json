@@ -3,7 +3,7 @@
     "description": "Animate numbers with smooth vertical digit transitions",
     "name": "rolling-number",
     "type": "registry:ui",
-    "registryDependencies": ["gsap", "@gsap/react"],
+    "dependencies": ["gsap", "@gsap/react"],
     "files": [
         {
             "path": "gsap/rolling-number.tsx",

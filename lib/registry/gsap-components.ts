@@ -247,7 +247,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
         description: "Visually expressive status updates with animated dots and smooth sliding text transitions",
         name: "dot-flow",
         type: "registry:ui",
-        registryDependencies: ["https://paceui.com/r/gsap/dot-loader", "gsap", "@gsap/react"],
+        dependencies: ["gsap", "@gsap/react"],
+        registryDependencies: ["https://paceui.com/r/gsap/dot-loader"],
         files: [
             {
                 path: "gsap/dot-flow.tsx",
@@ -261,7 +262,7 @@ export const gsapComponentRegistries: RegistryItem[] = [
         description: "Animate numbers with smooth vertical digit transitions",
         name: "rolling-number",
         type: "registry:ui",
-        registryDependencies: ["gsap", "@gsap/react"],
+        dependencies: ["gsap", "@gsap/react"],
         files: [
             {
                 path: "gsap/rolling-number.tsx",
@@ -275,7 +276,7 @@ export const gsapComponentRegistries: RegistryItem[] = [
         description: "Display live GitHub star count for any public repository",
         name: "github-star-counter",
         type: "registry:ui",
-        registryDependencies: ["https://paceui.com/r/gsap/rolling-number", "gsap", "@gsap/react"],
+        registryDependencies: ["https://paceui.com/r/gsap/rolling-number"],
         files: [
             {
                 path: "gsap/github-star-counter.tsx",
@@ -289,12 +290,26 @@ export const gsapComponentRegistries: RegistryItem[] = [
         description: "A dynamic content swapper with smooth animations and flexible visual effects",
         name: "swap",
         type: "registry:ui",
-        registryDependencies: ["gsap", "@gsap/react"],
+        dependencies: ["gsap", "@gsap/react"],
         files: [
             {
                 path: "gsap/swap.tsx",
                 type: "registry:ui",
                 target: "~/components/gsap/swap.tsx",
+            },
+        ],
+    },
+    {
+        title: "Modal Selector",
+        description: "AI-focused model selector with preview, tooltips, and capability indicators built-in",
+        name: "modal-selector",
+        type: "registry:ui",
+        registryDependencies: ["https://paceui.com/r/gsap/swap", "button"],
+        files: [
+            {
+                path: "ai/modal-selector.tsx",
+                type: "registry:ui",
+                target: "~/components/ai/modal-selector.tsx",
             },
         ],
     },
