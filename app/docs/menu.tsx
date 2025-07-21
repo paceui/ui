@@ -18,6 +18,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         new: true,
     },
     {
+        title: "Ability Selector",
+        href: components + "/modal-ability-selector",
+        new: true,
+    },
+    {
         title: "Text based",
         isLabel: true,
     },

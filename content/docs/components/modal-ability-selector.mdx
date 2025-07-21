@@ -1,0 +1,47 @@
+---
+slug: components-modal-ability-selector
+title: Modal Ability Selector
+description: Compact selector for toggling abilities with icons and custom styles.
+---
+
+<DemoCodePreview
+    path="demo/components/modal-ability-selector/default.tsx"
+    v0Link="/gsap/modal-ability-selector"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli" className="mt-3">
+    <TabsList>
+        <TabsTrigger value="cli">CLI</TabsTrigger>
+        <TabsTrigger value="manual">Manual</TabsTrigger>
+    </TabsList>
+    <TabsContent value="cli" className="mt-4">
+        <InstallationCommand command={`npx shadcn@latest add "~website/r/ai/modal-ability-selector"`} />
+    </TabsContent>
+    <TabsContent value="manual" className="mt-4">
+        <Steps>
+            <Step>
+                Install the following dependencies
+            </Step>
+            <InstallationCommand command="npm install gsap @gsap/react" />
+            <Step>
+                Copy and paste the following code into your project
+            </Step>
+            <CodePreview path='components/ai/modal-ability-selector.tsx' collapsible></CodePreview>
+
+            <Step>
+                Update the import paths to fit your project setup
+            </Step>
+        </Steps>
+    </TabsContent>
+</Tabs>
+
+## Props
+
+### ModalAbilitySelector
+
+| Prop          | Type                          | Default |
+|---------------|-------------------------------|---------|
+| maxVisible    | number                        | 3       |
+| buttonVariant | `ghost`, `outline`, `default` | `ghost` |

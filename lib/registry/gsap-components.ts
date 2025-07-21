@@ -313,4 +313,18 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        title: "Modal Ability Selector",
+        description: "Compact selector for toggling abilities with icons and custom styles",
+        name: "modal-ability-selector",
+        type: "registry:ui",
+        registryDependencies: ["https://paceui.com/r/gsap/swap", "button", "dropdown-menu", "tooltip"],
+        files: [
+            {
+                path: "ai/modal-ability-selector.tsx",
+                type: "registry:ui",
+                target: "~/components/ai/modal-ability-selector.tsx",
+            },
+        ],
+    },
 ];
