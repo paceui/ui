@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 export const Demo = () => {
     return (
-        <div className="bg-card my-100 max-w-2xl grow rounded border">
+        <div className="bg-card max-w-2xl grow rounded border">
             <Textarea
                 className="h-36 resize-none appearance-none border-none shadow-none !ring-0"
                 placeholder="What’s on your mind? I’ll decode it instantly 🤖"

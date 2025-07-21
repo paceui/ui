@@ -63,7 +63,7 @@ export const ModalAbilitySelector = ({
     ...props
 }: ModalAbilitySelectorProps) => {
     const [open, setOpen] = useState(false);
-    const [selected, setSelected] = useState<AbilityType[]>([]);
+    const [selected, setSelected] = useState<AbilityType[]>(["code", "search"]);
 
     const toggleAbility = (ability: AbilityType) => {
         setSelected((prev) => (prev.includes(ability) ? prev.filter((c) => c !== ability) : [...prev, ability]));
