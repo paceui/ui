@@ -97,7 +97,6 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                         )}
                         href={routes.blocks.base}>
                         Blocks
-                        <div className="rounded-full border px-1.5 py-0.5 text-xs/none font-medium">New</div>
                     </Link>
                     <Link
                         className={cn(
@@ -106,7 +105,7 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                                 "text-foreground font-medium": pathname.includes("/flow-builder"),
                             },
                         )}
-                        href={routes.docs.components.base + "/modal-selector"}>
+                        href={routes.docs.components.base + "/ai-suggestions"}>
                         AI ToolKit
                         <div className="bg-secondary text-secondary-foreground rounded-full px-1.5 py-0.5 text-xs/none font-medium shadow-xs">
                             Trending

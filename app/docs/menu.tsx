@@ -15,11 +15,14 @@ export const docsComponentNavItems: SidebarNavItem[] = [
     {
         title: "Modal Selector",
         href: components + "/modal-selector",
-        new: true,
     },
     {
         title: "Ability Selector",
         href: components + "/modal-ability-selector",
+    },
+    {
+        title: "AI Suggestions",
+        href: components + "/ai-suggestions",
         new: true,
     },
     {

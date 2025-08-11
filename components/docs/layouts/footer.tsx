@@ -20,7 +20,7 @@ export const Footer = ({ className }: FooterProps) => {
                 Built by{" "}
                 <Link
                     className="text-foreground font-medium hover:underline"
-                    href={routes.external.denishX}
+                    href={routes.external.portfolio}
                     target="_blank">
                     Denish
                 </Link>
