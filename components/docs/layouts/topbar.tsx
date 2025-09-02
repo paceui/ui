@@ -45,8 +45,8 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                     href: routes.blocks.base,
                 },
                 {
-                    title: "Flow Builder",
-                    href: routes.docs.components.base + "/flow-builder",
+                    title: "Boilerplate",
+                    href: "/boilerplate",
                 },
             ],
         },
@@ -83,7 +83,7 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                     <Link
                         className={cn("text-foreground/80 hover:text-foreground text-[15px] transition-all", {
                             "text-foreground font-medium":
-                                pathname.includes("docs") && !pathname.includes("flow-builder"),
+                                pathname.includes("docs"),
                         })}
                         href={routes.docs.components.base}>
                         Components
@@ -102,13 +102,13 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                         className={cn(
                             "text-foreground/80 hover:text-foreground flex items-center gap-1.5 text-[15px] transition-all",
                             {
-                                "text-foreground font-medium": pathname.includes("/flow-builder"),
+                                "text-foreground font-medium": pathname.includes("/boilerplate"),
                             },
                         )}
-                        href={routes.docs.components.base + "/ai-suggestions"}>
-                        AI ToolKit
+                        href={"/boilerplate"}>
+                        Boilerplate
                         <div className="bg-secondary text-secondary-foreground rounded-full px-1.5 py-0.5 text-xs/none font-medium shadow-xs">
-                            Trending
+                            In Dev
                         </div>
                     </Link>
                 </div>

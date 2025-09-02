@@ -36,8 +36,8 @@ export const Newsletter = () => {
     return (
         <form
             onSubmit={onSubmit}
-            className="bg-foreground/5 relative flex flex-col items-center overflow-hidden rounded px-3 py-4 text-center sm:px-8 sm:py-6 xl:px-16">
-            <NewspaperIcon className="text-foreground/10 absolute top-4 left-4 -z-1 size-12 -rotate-45" />
+            className="bg-foreground/3 relative flex flex-col items-center overflow-hidden rounded px-3 py-4 text-center sm:px-8 sm:py-6 xl:px-16">
+            <NewspaperIcon className="text-foreground/5 absolute top-4 left-4 -z-1 size-12 -rotate-45" />
             <p className="text-lg/none font-medium">Join our newsletter!</p>
             <div className="mt-3 flex items-center gap-2 sm:mt-4 sm:gap-3">
                 <Input
@@ -48,14 +48,14 @@ export const Newsletter = () => {
                     className="bg-background w-52 shadow-none sm:w-72"
                     placeholder="mail@site.com"
                 />
-                <Button type="submit" className="sm:hidden" size="icon">
+                <Button type="submit" className="sm:hidden cursor-pointer" size="icon">
                     <MailIcon />
                 </Button>
-                <TextFallButton
+                <Button
                     type="submit"
-                    className="bg-primary text-primary-foreground cursor-pointer rounded-md py-2 ps-3.5 pe-3.75 text-sm font-medium max-sm:hidden">
+                    className="cursor-pointer max-sm:hidden">
                     Subscribe
-                </TextFallButton>
+                </Button>
             </div>
             {result && !result.success && <span className="text-destructive text-xs sm:text-sm">{result.message}</span>}
             {result && result.success && <span className="text-xs text-green-500 sm:text-sm">{result.message}</span>}
