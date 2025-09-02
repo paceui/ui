@@ -16,22 +16,31 @@ description: How to install dependencies and organize your app structure.
 
     <InstallationCommand command="npx shadcn@canary init"/>
 
+    <Step>Add `@paceui-ui` to your `components.json`</Step>
+
+    <CodePreview lang="json" code={`{
+    ...
+    "registries": {
+        "@paceui-ui": "https://ui.paceui.com/r/{name}.json"  // [!code highlight]
+    }
+}`}/>
+
     <Step>That's it</Step>
 
     You’re ready to start adding components to your project
 
-    <InstallationCommand command='npx shadcn@canary add "~website/r/gsap/text-reveal"' />
+    <InstallationCommand command='npx shadcn@canary add @paceui-ui/text-reveal' />
 
     The command above will add the `TextReveal` component to your project. You can then import it using the following syntax:
 
     <CodePreview code={`import { TextReveal } from "@/components/gsap/text-reveal" // [!code highlight]
 
-        export default function Home() {
-            return (
-                <TextReveal>
-                    PaceUI
-                </TextReveal>
-            )
-        }`}/>
+export default function Home() {
+    return (
+        <TextReveal>
+            PaceUI
+        </TextReveal>
+    )
+}`}/>
 
 </Steps>

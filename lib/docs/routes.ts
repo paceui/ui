@@ -13,7 +13,7 @@ export const routes = {
         base: "/blocks",
     },
     external: {
-        github: "https://github.com/paceui/paceui",
+        github: "https://github.com/paceui/ui",
         discord: "https://discord.com/invite/RS2fj5CqAM",
         twitter: "https://x.com/paceui_",
         denishX: "https://x.com/withden_",

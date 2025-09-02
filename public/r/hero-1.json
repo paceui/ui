@@ -5,10 +5,10 @@
     "type": "registry:block",
     "dependencies": ["gsap", "@gsap/react"],
     "registryDependencies": [
-        "https://paceui.com/r/gsap/reveal-text",
-        "https://paceui.com/r/gsap/tilt-card",
-        "https://paceui.com/r/gsap/spring-button",
-        "https://paceui.com/r/gsap/text-fall-button"
+        "@paceui-ui/reveal-text",
+        "@paceui-ui/tilt-card",
+        "@paceui-ui/spring-button",
+        "@paceui-ui/text-fall-button"
     ],
     "files": [
         {

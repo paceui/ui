@@ -4,7 +4,7 @@
     "name": "modal-selector",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],
-    "registryDependencies": ["https://paceui.com/r/gsap/swap", "button"],
+    "registryDependencies": ["@paceui-ui/swap", "button"],
     "files": [
         {
             "path": "ai/modal-selector.tsx",

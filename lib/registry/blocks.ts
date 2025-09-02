@@ -1,4 +1,4 @@
-import { type RegistryItem } from "shadcn/registry";
+import { type RegistryItem } from "shadcn/schema";
 
 export const blockRegistries: RegistryItem[] = [
     {
@@ -8,10 +8,10 @@ export const blockRegistries: RegistryItem[] = [
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
         registryDependencies: [
-            "https://paceui.com/r/gsap/reveal-text",
-            "https://paceui.com/r/gsap/tilt-card",
-            "https://paceui.com/r/gsap/spring-button",
-            "https://paceui.com/r/gsap/text-fall-button",
+            "@paceui-ui/reveal-text",
+            "@paceui-ui/tilt-card",
+            "@paceui-ui/spring-button",
+            "@paceui-ui/text-fall-button",
         ],
         files: [
             {
@@ -28,9 +28,9 @@ export const blockRegistries: RegistryItem[] = [
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
         registryDependencies: [
-            "https://paceui.com/r/gsap/reveal-text",
-            "https://paceui.com/r/gsap/spring-button",
-            "https://paceui.com/r/gsap/text-fall-button",
+            "@paceui-ui/reveal-text",
+            "@paceui-ui/spring-button",
+            "@paceui-ui/text-fall-button",
         ],
         files: [
             {
@@ -47,8 +47,8 @@ export const blockRegistries: RegistryItem[] = [
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
         registryDependencies: [
-            "https://paceui.com/r/gsap/reveal-on-scroll",
-            "https://paceui.com/r/gsap/reveal-text",
+            "@paceui-ui/reveal-on-scroll",
+            "@paceui-ui/reveal-text",
             "button",
         ],
         files: [
@@ -66,9 +66,9 @@ export const blockRegistries: RegistryItem[] = [
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
         registryDependencies: [
-            "https://paceui.com/r/gsap/reveal-on-scroll",
-            "https://paceui.com/r/gsap/reveal-text",
-            "https://paceui.com/r/gsap/swap",
+            "@paceui-ui/reveal-on-scroll",
+            "@paceui-ui/reveal-text",
+            "@paceui-ui/swap",
             "button",
             "avatar",
         ],
@@ -87,8 +87,8 @@ export const blockRegistries: RegistryItem[] = [
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
         registryDependencies: [
-            "https://paceui.com/r/gsap/spring-button",
-            "https://paceui.com/r/gsap/stagger-on-scroll",
+            "@paceui-ui/spring-button",
+            "@paceui-ui/stagger-on-scroll",
             "button",
         ],
         files: [
@@ -105,7 +105,7 @@ export const blockRegistries: RegistryItem[] = [
         name: "product-filter-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
-        registryDependencies: ["https://paceui.com/r/gsap/flip-reveal", "input", "label", "select"],
+        registryDependencies: ["@paceui-ui/flip-reveal", "input", "label", "select"],
         files: [
             {
                 path: "product-filter/product-filter-1.tsx",
@@ -120,7 +120,7 @@ export const blockRegistries: RegistryItem[] = [
         name: "product-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
-        registryDependencies: ["https://paceui.com/r/gsap/spring-button", "tooltip"],
+        registryDependencies: ["@paceui-ui/spring-button", "tooltip"],
         files: [
             {
                 path: "product/product-1.tsx",
@@ -135,7 +135,7 @@ export const blockRegistries: RegistryItem[] = [
         name: "testimonials-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
-        registryDependencies: ["https://paceui.com/r/gsap/profile-peek"],
+        registryDependencies: ["@paceui-ui/profile-peek"],
         files: [
             {
                 path: "testimonials/testimonials-1.tsx",

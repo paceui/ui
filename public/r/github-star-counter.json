@@ -3,7 +3,7 @@
     "description": "Display live GitHub star count for any public repository",
     "name": "github-star-counter",
     "type": "registry:ui",
-    "registryDependencies": ["https://paceui.com/r/gsap/rolling-number"],
+    "registryDependencies": ["@paceui-ui/rolling-number"],
     "files": [
         {
             "path": "gsap/github-star-counter.tsx",

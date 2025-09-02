@@ -4,7 +4,7 @@
     "name": "modal-ability-selector",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],
-    "registryDependencies": ["https://paceui.com/r/gsap/swap", "button", "dropdown-menu", "tooltip"],
+    "registryDependencies": ["@paceui-ui/swap", "button", "dropdown-menu", "tooltip"],
     "files": [
         {
             "path": "ai/modal-ability-selector.tsx",

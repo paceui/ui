@@ -128,7 +128,7 @@ export const BlockPreview = ({ path, registry, smHeight, mdHeight, lgHeight }: I
                 <div className="flex items-center gap-1.5">
                     {registry && (
                         <Link
-                            href={`https://v0.dev/chat/api/open?url=https://paceui.com/r/blocks/${registry}.json`}
+                            href={`https://v0.dev/chat/api/open?url=https://ui.paceui.com/r/${registry}.json`}
                             target="_blank">
                             <Button
                                 className="group cursor-pointer shadow-none max-sm:size-9"
@@ -194,7 +194,7 @@ export const BlockPreview = ({ path, registry, smHeight, mdHeight, lgHeight }: I
                             </div>
                             <InstallationCommand
                                 wrapperClassname="mt-2 mb-0 ms-9.5"
-                                command={`npx shadcn@latest add "~website/r/blocks/${registry}"`}
+                                command={`npx shadcn@latest add @paceui-ui/${registry}"`}
                             />
                         </div>
                     )}

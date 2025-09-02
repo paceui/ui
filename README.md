@@ -5,20 +5,20 @@ Copy, customise, and create without the extra setup.
 
 ## Getting Started
 
-Explore the full documentation at [paceui.com](https://paceui.com/) and start building faster.
+Explore the full documentation at [paceui.com](https://ui.paceui.com/) and start building faster.
 
 ### Quick Links
 
-- [Animated Components](https://paceui.com/docs/components)  
+- [Animated Components](https://ui.paceui.com/docs/components)  
   Reusable UI elements with built-in interactivity
-- [Design Blocks](https://paceui.com/blocks)  
+- [Design Blocks](https://ui.paceui.com/blocks)  
   Pre-built layouts for pages, sections, and flows
 
 More animations, interactive sections, and design tools are coming soon.
 
 ## License
 
-Released under the [MIT license](https://github.com/paceui/paceui/blob/main/LICENSE.md).
+Released under the [MIT license](https://github.com/paceui/ui/blob/main/LICENSE.md).
 Use it.
 Remix it.
 Make it yours.

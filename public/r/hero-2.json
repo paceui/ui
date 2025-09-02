@@ -4,11 +4,7 @@
     "name": "hero-2",
     "type": "registry:block",
     "dependencies": ["gsap", "@gsap/react"],
-    "registryDependencies": [
-        "https://paceui.com/r/gsap/reveal-text",
-        "https://paceui.com/r/gsap/spring-button",
-        "https://paceui.com/r/gsap/text-fall-button"
-    ],
+    "registryDependencies": ["@paceui-ui/reveal-text", "@paceui-ui/spring-button", "@paceui-ui/text-fall-button"],
     "files": [
         {
             "path": "hero/hero-2.tsx",

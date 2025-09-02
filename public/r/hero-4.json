@@ -5,9 +5,9 @@
     "type": "registry:block",
     "dependencies": ["gsap", "@gsap/react"],
     "registryDependencies": [
-        "https://paceui.com/r/gsap/reveal-on-scroll",
-        "https://paceui.com/r/gsap/reveal-text",
-        "https://paceui.com/r/gsap/swap",
+        "@paceui-ui/reveal-on-scroll",
+        "@paceui-ui/reveal-text",
+        "@paceui-ui/swap",
         "button",
         "avatar"
     ],

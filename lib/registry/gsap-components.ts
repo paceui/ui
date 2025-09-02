@@ -1,4 +1,4 @@
-import { type RegistryItem } from "shadcn/registry";
+import type { RegistryItem } from "shadcn/schema";
 
 export const gsapComponentRegistries: RegistryItem[] = [
     {
@@ -248,7 +248,7 @@ export const gsapComponentRegistries: RegistryItem[] = [
         name: "dot-flow",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
-        registryDependencies: ["https://paceui.com/r/gsap/dot-loader"],
+        registryDependencies: ["@paceui-ui/dot-loader"],
         files: [
             {
                 path: "gsap/dot-flow.tsx",
@@ -276,7 +276,7 @@ export const gsapComponentRegistries: RegistryItem[] = [
         description: "Display live GitHub star count for any public repository",
         name: "github-star-counter",
         type: "registry:ui",
-        registryDependencies: ["https://paceui.com/r/gsap/rolling-number"],
+        registryDependencies: ["@paceui-ui/rolling-number"],
         files: [
             {
                 path: "gsap/github-star-counter.tsx",
@@ -305,7 +305,7 @@ export const gsapComponentRegistries: RegistryItem[] = [
         name: "modal-selector",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
-        registryDependencies: ["https://paceui.com/r/gsap/swap", "button"],
+        registryDependencies: ["@paceui-ui/swap", "button"],
         files: [
             {
                 path: "ai/modal-selector.tsx",
@@ -320,7 +320,7 @@ export const gsapComponentRegistries: RegistryItem[] = [
         name: "modal-ability-selector",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
-        registryDependencies: ["https://paceui.com/r/gsap/swap", "button", "dropdown-menu", "tooltip"],
+        registryDependencies: ["@paceui-ui/swap", "button", "dropdown-menu", "tooltip"],
         files: [
             {
                 path: "ai/modal-ability-selector.tsx",

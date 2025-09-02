@@ -4,7 +4,7 @@
     "name": "product-filter-1",
     "type": "registry:block",
     "dependencies": ["gsap", "@gsap/react"],
-    "registryDependencies": ["https://paceui.com/r/gsap/flip-reveal", "input", "label", "select"],
+    "registryDependencies": ["@paceui-ui/flip-reveal", "input", "label", "select"],
     "files": [
         {
             "path": "product-filter/product-filter-1.tsx",

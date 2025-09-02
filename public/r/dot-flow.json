@@ -4,7 +4,7 @@
     "name": "dot-flow",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],
-    "registryDependencies": ["https://paceui.com/r/gsap/dot-loader"],
+    "registryDependencies": ["@paceui-ui/dot-loader"],
     "files": [
         {
             "path": "gsap/dot-flow.tsx",

@@ -4,11 +4,7 @@
     "name": "hero-3",
     "type": "registry:block",
     "dependencies": ["gsap", "@gsap/react"],
-    "registryDependencies": [
-        "https://paceui.com/r/gsap/reveal-on-scroll",
-        "https://paceui.com/r/gsap/reveal-text",
-        "button"
-    ],
+    "registryDependencies": ["@paceui-ui/reveal-on-scroll", "@paceui-ui/reveal-text", "button"],
     "files": [
         {
             "path": "hero/hero-3.tsx",

@@ -1,14 +1,12 @@
 import * as fs from "node:fs/promises";
 import path from "path";
-import { RegistryItem } from "shadcn/registry";
+import type { RegistryItem } from "shadcn/schema";
 
 import { blockRegistries } from "./blocks";
 import { gsapComponentRegistries } from "./gsap-components";
 
 // Registry paths
 const REGISTRY_PATH = path.join(process.cwd(), "public/r/");
-const GSAP_COMPONENT_REGISTRY_PATH = REGISTRY_PATH + "gsap/";
-const BLOCKS_REGISTRY_PATH = REGISTRY_PATH + "blocks/";
 const MCP_REGISTRY_PATH = REGISTRY_PATH + "/";
 
 // Project source path
@@ -18,7 +16,7 @@ const buildMCP = async () => {
     const mcp = {
         $schema: "https://ui.shadcn.com/schema/registry.json",
         name: "PaceUI",
-        homepage: "https://paceui.com",
+        homepage: "https://ui.paceui.com",
         items: [
             {
                 name: "index",
@@ -62,8 +60,8 @@ const buildRegistry = async (name: string, path: string, registries: RegistryIte
 
 const init = async () => {
     // registry:build - components/**
-    await buildRegistry("components", GSAP_COMPONENT_REGISTRY_PATH, gsapComponentRegistries);
-    await buildRegistry("demo/blocks", BLOCKS_REGISTRY_PATH, blockRegistries);
+    await buildRegistry("components", REGISTRY_PATH, gsapComponentRegistries);
+    await buildRegistry("demo/blocks", REGISTRY_PATH, blockRegistries);
     await buildMCP();
 };
 

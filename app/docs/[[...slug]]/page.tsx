@@ -111,7 +111,7 @@ export default async function Page(props: PageProps) {
                     <p className="font-medium">Contribute</p>
                     <div className="mt-2 space-y-1.5">
                         <Link
-                            href={`https://github.com/paceui/paceui/blob/main/content/${url}.mdx`}
+                            href={`https://github.com/paceui/ui/blob/main/content/${url}.mdx`}
                             target="_blank"
                             className="text-foreground/70 hover:text-foreground flex items-center gap-2 transition-all">
                             <PencilIcon className="size-4" />

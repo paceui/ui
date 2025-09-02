@@ -41,7 +41,7 @@ export const DemoCodePreview = ({ path, props, v0Link }: IDemoCodePreview) => {
                 <div className="flex items-center gap-2.5">
                     {v0Link && (
                         <Link
-                            href={`https://v0.dev/chat/api/open?url=https://paceui.com/r${v0Link}.json`}
+                            href={`https://v0.dev/chat/api/open?url=https://ui.paceui.com/r${v0Link}.json`}
                             target="_blank">
                             <Button
                                 className="group cursor-pointer shadow-none max-sm:size-9"

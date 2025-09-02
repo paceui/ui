@@ -57,7 +57,7 @@ export const InstallationCommand = ({
     const [hasCopied, setHasCopied] = useState(false);
 
     const command = useMemo(() => {
-        return rawCommand.replace("~website/", "https://paceui.com/");
+        return rawCommand.replace("~website/", "https://ui.paceui.com/");
     }, [rawCommand]);
 
     const copy = async (manager: PackageManager) => {
