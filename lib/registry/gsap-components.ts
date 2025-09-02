@@ -331,7 +331,7 @@ export const gsapComponentRegistries: RegistryItem[] = [
     },
     {
         title: "Token Counter",
-        description: "Accurately counts and tracks tokens in real time to optimize input limits.\n",
+        description: "Accurately counts and tracks tokens in real time to optimize input limits",
         name: "token-counter",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -340,6 +340,20 @@ export const gsapComponentRegistries: RegistryItem[] = [
                 path: "ai/token-counter.tsx",
                 type: "registry:ui",
                 target: "~/components/ai/token-counter.tsx",
+            },
+        ],
+    },
+    {
+        title: "Gradient Shadow",
+        description: "Smooth horizontal gradient flow, creating a subtle glowing hover shadow effect",
+        name: "gradient-shadow",
+        type: "registry:ui",
+        dependencies: ["gsap"],
+        files: [
+            {
+                path: "gsap/gradient-shadow.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/gradient-shadow.tsx",
             },
         ],
     },

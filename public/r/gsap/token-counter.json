@@ -1,6 +1,6 @@
 {
     "title": "Token Counter",
-    "description": "Accurately counts and tracks tokens in real time to optimize input limits.\n",
+    "description": "Accurately counts and tracks tokens in real time to optimize input limits",
     "name": "token-counter",
     "type": "registry:ui",
     "dependencies": ["gsap", "@gsap/react"],

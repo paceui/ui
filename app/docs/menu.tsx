@@ -86,6 +86,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         isLabel: true,
     },
     {
+        title: "Gradient Shadow",
+        href: components + "/gradient-shadow",
+        new: true,
+    },
+    {
         title: "Github Star Counter",
         href: components + "/github-star-counter",
     },
