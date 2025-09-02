@@ -3,6 +3,7 @@
     "description": "AI-focused model selector with preview, tooltips, and capability indicators built-in",
     "name": "modal-selector",
     "type": "registry:ui",
+    "dependencies": ["gsap", "@gsap/react"],
     "registryDependencies": ["https://paceui.com/r/gsap/swap", "button"],
     "files": [
         {

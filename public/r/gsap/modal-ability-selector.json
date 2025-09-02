@@ -3,6 +3,7 @@
     "description": "Compact selector for toggling abilities with icons and custom styles",
     "name": "modal-ability-selector",
     "type": "registry:ui",
+    "dependencies": ["gsap", "@gsap/react"],
     "registryDependencies": ["https://paceui.com/r/gsap/swap", "button", "dropdown-menu", "tooltip"],
     "files": [
         {

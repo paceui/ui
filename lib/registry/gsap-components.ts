@@ -304,6 +304,7 @@ export const gsapComponentRegistries: RegistryItem[] = [
         description: "AI-focused model selector with preview, tooltips, and capability indicators built-in",
         name: "modal-selector",
         type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
         registryDependencies: ["https://paceui.com/r/gsap/swap", "button"],
         files: [
             {
@@ -318,12 +319,27 @@ export const gsapComponentRegistries: RegistryItem[] = [
         description: "Compact selector for toggling abilities with icons and custom styles",
         name: "modal-ability-selector",
         type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
         registryDependencies: ["https://paceui.com/r/gsap/swap", "button", "dropdown-menu", "tooltip"],
         files: [
             {
                 path: "ai/modal-ability-selector.tsx",
                 type: "registry:ui",
                 target: "~/components/ai/modal-ability-selector.tsx",
+            },
+        ],
+    },
+    {
+        title: "Token Counter",
+        description: "Accurately counts and tracks tokens in real time to optimize input limits.\n",
+        name: "token-counter",
+        type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "ai/token-counter.tsx",
+                type: "registry:ui",
+                target: "~/components/ai/token-counter.tsx",
             },
         ],
     },

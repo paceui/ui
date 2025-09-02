@@ -23,6 +23,10 @@ export const docsComponentNavItems: SidebarNavItem[] = [
     {
         title: "AI Suggestions",
         href: components + "/ai-suggestions",
+    },
+    {
+        title: "Token Counter",
+        href: components + "/token-counter",
         new: true,
     },
     {

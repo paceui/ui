@@ -1,0 +1,48 @@
+---
+slug: components-token-counter
+title: Token Counter
+description: Accurately counts and tracks tokens in real time to optimize input limits.
+---
+
+<DemoCodePreview
+    path="demo/components/token-counter/default.tsx"
+    v0Link="/ai/token-counter"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli" className="mt-3">
+    <TabsList>
+        <TabsTrigger value="cli">CLI</TabsTrigger>
+        <TabsTrigger value="manual">Manual</TabsTrigger>
+    </TabsList>
+    <TabsContent value="cli" className="mt-4">
+        <InstallationCommand command={`npx shadcn@latest add "~website/r/ai/token-counter"`} />
+    </TabsContent>
+    <TabsContent value="manual" className="mt-4">
+        <Steps>
+            <Step>
+                Install the following dependencies
+            </Step>
+            <InstallationCommand command="npm install gsap @gsap/react" />
+            <Step>
+                Copy and paste the following code into your project
+            </Step>
+            <CodePreview path='components/ai/token-counter.tsx' collapsible></CodePreview>
+
+            <Step>
+                Update the import paths to fit your project setup
+            </Step>
+        </Steps>
+    </TabsContent>
+</Tabs>
+
+## Props
+
+### AiSuggestions
+
+| Prop      | Type   | Default |
+|-----------|--------|---------|
+| sourceRef | Ref    | -       |
+| token     | number | -       |
+
