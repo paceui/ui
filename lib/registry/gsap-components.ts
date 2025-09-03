@@ -386,4 +386,23 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        title: "Response Writer",
+        description: "An auto scrolling text display that smoothly keeps the latest response always visible",
+        name: "response-writer",
+        type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "ai/response-writer.tsx",
+                type: "registry:ui",
+                target: "~/components/ai/response-writer.tsx",
+            },
+            {
+                path: "hooks/use-writer.ts",
+                type: "registry:hook",
+                target: "~/hook/use-writer.ts",
+            },
+        ],
+    },
 ];
