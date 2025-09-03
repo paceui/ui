@@ -1,0 +1,46 @@
+---
+slug: components-overlay-effect
+title: Overlay Effect
+description: A dynamic overlay that reacts to cursor movement, creating interactive visual effects in real time.
+---
+
+<DemoCodePreview
+    path="demo/components/overlay-effect/default.tsx"
+    v0Link="/gsap/overlay-effect"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli" className="mt-3">
+    <TabsList>
+        <TabsTrigger value="cli">CLI</TabsTrigger>
+        <TabsTrigger value="manual">Manual</TabsTrigger>
+    </TabsList>
+    <TabsContent value="cli" className="mt-4">
+        <InstallationCommand command={`npx shadcn@latest add "@paceui-ui/overlay-effect`} />
+    </TabsContent>
+    <TabsContent value="manual" className="mt-4">
+        <Steps>
+            <Step>
+                Install the following dependencies
+            </Step>
+            <InstallationCommand command="npm install gsap @gsap/react" />
+            <Step>
+                Copy and paste the following code into your project
+            </Step>
+            <CodePreview path='components/gsap/overlay-effect.tsx' collapsible></CodePreview>
+
+            <Step>
+                Update the import paths to fit your project setup
+            </Step>
+        </Steps>
+    </TabsContent>
+</Tabs>
+
+## Props
+
+### OverlayEffect
+
+| Prop   | Type   | Default  |
+|--------|--------|----------|
+| effect | string | `type-1` |

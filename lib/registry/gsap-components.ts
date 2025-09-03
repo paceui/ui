@@ -405,4 +405,20 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+
+    {
+        title: "Overlay Effect",
+        description:
+            "A dynamic overlay that reacts to cursor movement, creating interactive visual effects in real time",
+        name: "overlay-effect",
+        type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/overlay-effect.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/overlay-effect.tsx",
+            },
+        ],
+    },
 ];

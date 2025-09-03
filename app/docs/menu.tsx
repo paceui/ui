@@ -101,6 +101,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         new: true,
     },
     {
+        title: "Overlay Effect",
+        href: components + "/overlay-effect",
+        new: true,
+    },
+    {
         title: "Gradient Shadow",
         href: components + "/gradient-shadow",
         new: true,
