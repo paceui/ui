@@ -330,6 +330,14 @@
             ]
         },
         {
+            "title": "Swap",
+            "description": "A flexible swap component that animates content changes with smooth customizable transition effects",
+            "name": "swap",
+            "type": "registry:ui",
+            "dependencies": ["gsap", "@gsap/react"],
+            "files": [{ "path": "gsap/swap.tsx", "type": "registry:ui", "target": "~/components/gsap/swap.tsx" }]
+        },
+        {
             "title": "Hero Section",
             "description": "Hero sections to highlight your message and engage users with a clean, bold intro.",
             "name": "hero-1",

@@ -24,7 +24,7 @@ export const Demo = () => {
         <div className="bg-card max-w-2xl grow rounded border">
             <Textarea
                 className="h-36 resize-none appearance-none border-none shadow-none !ring-0"
-                placeholder="Ask me anything... It will consumed a token 😉"
+                placeholder="Ask me anything... It will consume a token 😉"
             />
             <div className="flex items-center justify-between px-4 py-3">
                 <p className="text-muted-foreground text-sm">ChatGPT</p>

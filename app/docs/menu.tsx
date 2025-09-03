@@ -86,6 +86,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         isLabel: true,
     },
     {
+        title: "Swap",
+        href: components + "/swap",
+        new: true,
+    },
+    {
         title: "Gradient Shadow",
         href: components + "/gradient-shadow",
         new: true,

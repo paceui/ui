@@ -357,4 +357,18 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        title: "Swap",
+        description: "A flexible swap component that animates content changes with smooth customizable transition effects",
+        name: "swap",
+        type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/swap.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/swap.tsx",
+            },
+        ],
+    },
 ];

@@ -61,12 +61,28 @@ const effectPresets = {
     ],
 } as const;
 
-type SwapProps<T> = Omit<ComponentProps<"div">, "children"> & {
+export type SwapProps<T = object> = Omit<ComponentProps<"div">, "children"> & {
     state: T;
     children: (state: T) => ReactNode;
     effects?: (keyof typeof effectPresets)[];
     duration?: number;
 };
+
+const mergeVars = (varsArray: Record<string,  string | number>[]) => {
+    const merged: Record<string,  string | number> = {};
+
+    for (const vars of varsArray) {
+        for (const [key, value] of Object.entries(vars)) {
+            if (key === "filter" && merged.filter) {
+                merged.filter += ` ${value}`; // combine filters
+            } else {
+                merged[key] = value; // last one wins for other props
+            }
+        }
+    }
+
+    return merged;
+}
 
 export const Swap = <T,>({ state, children, duration = 0.4, effects = [], ...props }: SwapProps<T>) => {
     const [currentState, setCurrentState] = useState(state);
@@ -75,7 +91,10 @@ export const Swap = <T,>({ state, children, duration = 0.4, effects = [], ...pro
     const contentRef = useRef<HTMLDivElement>(null);
 
     const [enterVars, exitVars, finalVars] = useMemo(
-        () => Array.from({ length: 3 }, (_, i) => effects.reduce((acc, e) => ({ ...acc, ...effectPresets[e][i] }), {})),
+        () =>
+            Array.from({ length: 3 }, (_, i) =>
+                mergeVars(effects.map((e) => effectPresets[e][i]))
+            ),
         [effects],
     );
 
