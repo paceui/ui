@@ -381,6 +381,20 @@
             ]
         },
         {
+            "title": "Layered Stack",
+            "description": "An interactive component that dynamically layers elements, creating a visually engaging stacked animation effect",
+            "name": "layered-stack",
+            "type": "registry:ui",
+            "dependencies": ["gsap", "@gsap/react"],
+            "files": [
+                {
+                    "path": "gsap/layered-stack.tsx",
+                    "type": "registry:ui",
+                    "target": "~/components/gsap/layered-stack.tsx"
+                }
+            ]
+        },
+        {
             "title": "Hero Section",
             "description": "Hero sections to highlight your message and engage users with a clean, bold intro.",
             "name": "hero-1",

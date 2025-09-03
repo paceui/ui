@@ -421,4 +421,19 @@ export const gsapComponentRegistries: RegistryItem[] = [
             },
         ],
     },
+    {
+        title: "Layered Stack",
+        description:
+            "An interactive component that dynamically layers elements, creating a visually engaging stacked animation effect",
+        name: "layered-stack",
+        type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/layered-stack.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/layered-stack.tsx",
+            },
+        ],
+    },
 ];

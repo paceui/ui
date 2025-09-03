@@ -101,6 +101,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         new: true,
     },
     {
+        title: "Layered Stack",
+        href: components + "/layered-stack",
+        new: true,
+    },
+    {
         title: "Overlay Effect",
         href: components + "/overlay-effect",
         new: true,
