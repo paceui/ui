@@ -359,7 +359,8 @@ export const gsapComponentRegistries: RegistryItem[] = [
     },
     {
         title: "Swap",
-        description: "A flexible swap component that animates content changes with smooth customizable transition effects",
+        description:
+            "A flexible swap component that animates content changes with smooth customizable transition effects",
         name: "swap",
         type: "registry:ui",
         dependencies: ["gsap", "@gsap/react"],
@@ -368,6 +369,20 @@ export const gsapComponentRegistries: RegistryItem[] = [
                 path: "gsap/swap.tsx",
                 type: "registry:ui",
                 target: "~/components/gsap/swap.tsx",
+            },
+        ],
+    },
+    {
+        title: "Animated Stack",
+        description: "A smooth stacked card component that expands on hover and collapses with animation",
+        name: "animated-stack",
+        type: "registry:ui",
+        dependencies: ["gsap", "@gsap/react"],
+        files: [
+            {
+                path: "gsap/animated-stack.tsx",
+                type: "registry:ui",
+                target: "~/components/gsap/animated-stack.tsx",
             },
         ],
     },

@@ -3,7 +3,6 @@
 import { MailIcon, NewspaperIcon } from "lucide-react";
 import { FormEvent, useEffect, useState } from "react";
 
-import { TextFallButton } from "@/components/gsap/text-fall-button";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ISubscribeResponse, subscribe } from "@/lib/docs";
@@ -48,12 +47,10 @@ export const Newsletter = () => {
                     className="bg-background w-52 shadow-none sm:w-72"
                     placeholder="mail@site.com"
                 />
-                <Button type="submit" className="sm:hidden cursor-pointer" size="icon">
+                <Button type="submit" className="cursor-pointer sm:hidden" size="icon">
                     <MailIcon />
                 </Button>
-                <Button
-                    type="submit"
-                    className="cursor-pointer max-sm:hidden">
+                <Button type="submit" className="cursor-pointer max-sm:hidden">
                     Subscribe
                 </Button>
             </div>

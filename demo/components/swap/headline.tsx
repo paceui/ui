@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import { Swap } from "@/components/gsap/swap";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
+
 const avatars = ["https://github.com/shadcn.png", "https://github.com/leerob.png", "https://github.com/rauchg.png"];
 
 export const Demo = () => {

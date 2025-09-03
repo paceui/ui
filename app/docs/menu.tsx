@@ -86,6 +86,11 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         isLabel: true,
     },
     {
+        title: "Animated Stack",
+        href: components + "/animated-stack",
+        new: true,
+    },
+    {
         title: "Swap",
         href: components + "/swap",
         new: true,

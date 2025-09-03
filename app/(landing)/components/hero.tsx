@@ -1,4 +1,4 @@
-import { ArrowRightIcon, BlocksIcon, ChevronRightIcon,  GoalIcon, ShapesIcon } from "lucide-react";
+import { ArrowRightIcon, BlocksIcon, ChevronRightIcon, GoalIcon, ShapesIcon } from "lucide-react";
 import Link from "next/link";
 
 import { GithubStarCounter } from "@/components/gsap/github-star-counter";

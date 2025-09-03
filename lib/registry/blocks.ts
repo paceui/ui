@@ -27,11 +27,7 @@ export const blockRegistries: RegistryItem[] = [
         name: "hero-2",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
-        registryDependencies: [
-            "@paceui-ui/reveal-text",
-            "@paceui-ui/spring-button",
-            "@paceui-ui/text-fall-button",
-        ],
+        registryDependencies: ["@paceui-ui/reveal-text", "@paceui-ui/spring-button", "@paceui-ui/text-fall-button"],
         files: [
             {
                 path: "hero/hero-2.tsx",
@@ -46,11 +42,7 @@ export const blockRegistries: RegistryItem[] = [
         name: "hero-3",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
-        registryDependencies: [
-            "@paceui-ui/reveal-on-scroll",
-            "@paceui-ui/reveal-text",
-            "button",
-        ],
+        registryDependencies: ["@paceui-ui/reveal-on-scroll", "@paceui-ui/reveal-text", "button"],
         files: [
             {
                 path: "hero/hero-3.tsx",
@@ -86,11 +78,7 @@ export const blockRegistries: RegistryItem[] = [
         name: "pricing-1",
         type: "registry:block",
         dependencies: ["gsap", "@gsap/react"],
-        registryDependencies: [
-            "@paceui-ui/spring-button",
-            "@paceui-ui/stagger-on-scroll",
-            "button",
-        ],
+        registryDependencies: ["@paceui-ui/spring-button", "@paceui-ui/stagger-on-scroll", "button"],
         files: [
             {
                 path: "pricing/pricing-1.tsx",

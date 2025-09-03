@@ -82,8 +82,7 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                 <div className="hidden gap-2 md:inline-flex md:gap-6">
                     <Link
                         className={cn("text-foreground/80 hover:text-foreground text-[15px] transition-all", {
-                            "text-foreground font-medium":
-                                pathname.includes("docs"),
+                            "text-foreground font-medium": pathname.includes("docs"),
                         })}
                         href={routes.docs.components.base}>
                         Components

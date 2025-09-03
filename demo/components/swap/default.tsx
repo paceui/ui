@@ -19,7 +19,7 @@ const formatTime = (date: Date) => {
     return [pad(hours), pad(minutes), pad(seconds), amOrPm];
 };
 
-type SwapEffect = NonNullable<SwapProps["effects"]>[number]
+type SwapEffect = NonNullable<SwapProps["effects"]>[number];
 
 const preEffects: SwapEffect[] = ["slideUp", "slideDown", "grayscale", "opacity", "blur"];
 
@@ -31,16 +31,16 @@ export const Demo = () => {
 
     const onChangeEffect = (item: SwapEffect) => {
         let eff = [...effects];
-        if(item=="slideUp" || item=="slideDown"){
-            eff = effects.filter(i => i !== "slideDown" && i !== "slideUp");
+        if (item == "slideUp" || item == "slideDown") {
+            eff = effects.filter((i) => i !== "slideDown" && i !== "slideUp");
         }
         if (eff.includes(item)) {
-            eff = eff.filter(i => i !== item);
+            eff = eff.filter((i) => i !== item);
         } else {
             eff = [...eff, item];
         }
         setEffects([...eff]);
-    }
+    };
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -74,12 +74,18 @@ export const Demo = () => {
                 </Swap>
             </div>
             <div className="mt-8 w-44">
-                <p className="font-medium text-muted-foreground">Effects</p>
-                <div className="space-y-1 mt-2">
+                <p className="text-muted-foreground font-medium">Effects</p>
+                <div className="mt-2 space-y-1">
                     {preEffects.map((effect, index) => (
-                        <div key={index} className="flex items-center gap-2 cursor-pointer" >
-                            <Checkbox id={`effect-${effect}`} checked={effects?.includes(effect)} onCheckedChange={()=>onChangeEffect(effect)} />
-                            <Label className="font-normal text-base" htmlFor={`effect-${effect}`}>{effect}</Label>
+                        <div key={index} className="flex cursor-pointer items-center gap-2">
+                            <Checkbox
+                                id={`effect-${effect}`}
+                                checked={effects?.includes(effect)}
+                                onCheckedChange={() => onChangeEffect(effect)}
+                            />
+                            <Label className="text-base font-normal" htmlFor={`effect-${effect}`}>
+                                {effect}
+                            </Label>
                         </div>
                     ))}
                 </div>

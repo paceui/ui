@@ -338,6 +338,20 @@
             "files": [{ "path": "gsap/swap.tsx", "type": "registry:ui", "target": "~/components/gsap/swap.tsx" }]
         },
         {
+            "title": "Animated Stack",
+            "description": "A smooth stacked card component that expands on hover and collapses with animation",
+            "name": "animated-stack",
+            "type": "registry:ui",
+            "dependencies": ["gsap", "@gsap/react"],
+            "files": [
+                {
+                    "path": "gsap/animated-stack.tsx",
+                    "type": "registry:ui",
+                    "target": "~/components/gsap/animated-stack.tsx"
+                }
+            ]
+        },
+        {
             "title": "Hero Section",
             "description": "Hero sections to highlight your message and engage users with a clean, bold intro.",
             "name": "hero-1",
