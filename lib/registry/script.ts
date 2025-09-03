@@ -47,8 +47,8 @@ const buildRegistry = async (name: string, path: string, registries: RegistryIte
         const newFiles = [];
         for (const file of item.files ?? []) {
             let filePath = SOURCE_PATH + `${name}/` + file.path;
-            if(file.type=="registry:hook"){
-               filePath =  SOURCE_PATH + file.path;
+            if (file.type == "registry:hook") {
+                filePath = SOURCE_PATH + file.path;
             }
             const content = await fs.readFile(filePath, { encoding: "utf8" });
             newFiles.push({
