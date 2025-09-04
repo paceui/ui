@@ -115,7 +115,7 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
             </div>
             <div className="flex items-center">
                 <Searchbar menuItems={menuItems}/>
-                <hr className="ms-2.5 me-1 h-6 border-e border-dashed" />
+                <hr className="ms-3 me-2 h-6 border-e" />
                 <Button variant={"ghost"} size="icon" asChild aria-label="Discord">
                     <Link href={routes.external.discord} target="_blank">
                         <DiscordIcon className="!size-4.5" />
@@ -131,7 +131,7 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                         <GithubIcon className="!size-4.5" />
                     </Link>
                 </Button>
-                <hr className="mx-1 h-6 border-e border-dashed" />
+                <hr className="mx-2 h-6 border-e" />
                 <ThemeModeToggle />
             </div>
         </div>
