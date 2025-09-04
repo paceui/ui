@@ -33,6 +33,9 @@ const buildMCP = async () => {
     await fs.writeFile(MCP_REGISTRY_PATH + "mcp.json", JSON.stringify(mcp), {
         encoding: "utf8",
     });
+    await fs.writeFile(MCP_REGISTRY_PATH + "registry.json", JSON.stringify(mcp), {
+        encoding: "utf8",
+    });
 };
 
 const buildRegistry = async (name: string, path: string, registries: RegistryItem[]) => {
