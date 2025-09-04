@@ -3,10 +3,16 @@
 import Link from "next/link";
 import { ClassNameValue } from "tailwind-merge";
 
-import { GithubIcon, TwitterIcon } from "@/components/docs/icon";
+
+
+import { DiscordIcon, GithubIcon, TwitterIcon } from "@/components/docs/icon";
 import { Button } from "@/components/ui/button";
 import { routes } from "@/lib/docs";
 import { cn } from "@/lib/utils";
+
+
+
+
 
 type FooterProps = {
     className?: ClassNameValue;
@@ -34,6 +40,11 @@ export const Footer = ({ className }: FooterProps) => {
                 .
             </p>
             <div className="flex items-center gap-0.5">
+                <Button variant={"ghost"} size="icon" asChild aria-label="Discord">
+                    <Link href={routes.external.discord} target="_blank">
+                        <DiscordIcon className="!size-4.5" />
+                    </Link>
+                </Button>
                 <Button variant={"ghost"} size="icon" asChild aria-label="Github">
                     <Link href={routes.external.twitter} target="_blank">
                         <TwitterIcon className="!size-4" />

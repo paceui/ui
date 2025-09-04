@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { ClassNameValue } from "tailwind-merge";
 import { Drawer } from "vaul";
 
-import { GithubIcon, TwitterIcon } from "@/components/docs/icon";
+import { DiscordIcon, GithubIcon, TwitterIcon } from "@/components/docs/icon";
 import { Sidebar, SidebarNavItem } from "@/components/docs/layouts";
 import { Logo } from "@/components/docs/logo";
 import { Button } from "@/components/ui/button";
@@ -113,6 +113,11 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                 </div>
             </div>
             <div className="flex items-center">
+                <Button variant={"ghost"} size="icon" asChild aria-label="Discord">
+                    <Link href={routes.external.discord} target="_blank">
+                        <DiscordIcon className="!size-4.5" />
+                    </Link>
+                </Button>
                 <Button variant={"ghost"} size="icon" asChild aria-label="Twitter">
                     <Link href={routes.external.twitter} target="_blank">
                         <TwitterIcon className="!size-4" />
