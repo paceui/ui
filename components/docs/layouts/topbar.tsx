@@ -15,6 +15,7 @@ import { routes } from "@/lib/docs";
 import { cn } from "@/lib/utils";
 
 import { ThemeModeToggle } from "../theme-mode-toggle";
+import { Searchbar } from "./Searchbar";
 
 type TopbarProps = {
     menuItems?: SidebarNavItem[];
@@ -113,6 +114,8 @@ export const Topbar = ({ menuItems = [], className, showLogo = false }: TopbarPr
                 </div>
             </div>
             <div className="flex items-center">
+                <Searchbar menuItems={menuItems}/>
+                <hr className="ms-2.5 me-1 h-6 border-e border-dashed" />
                 <Button variant={"ghost"} size="icon" asChild aria-label="Discord">
                     <Link href={routes.external.discord} target="_blank">
                         <DiscordIcon className="!size-4.5" />

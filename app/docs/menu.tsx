@@ -35,8 +35,8 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         new: true,
     },
     {
-        title: "Text based",
-        isLabel: true,
+        title: "Text Effects",
+        isLabel: true,  // Updated for clarity
     },
     {
         title: "Reveal Text",
@@ -59,65 +59,16 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         href: components + "/bouncing-text",
     },
     {
-        title: "Scroll based",
-        isLabel: true,
+        title: "Draw Line Text",
+        href: components + "/draw-line-text",
     },
     {
         title: "Mouse Wave Text",
         href: components + "/mouse-wave-text",
     },
     {
-        title: "Reveal on Scroll",
-        href: components + "/reveal-on-scroll",
-    },
-    {
-        title: "Stagger on Scroll",
-        href: components + "/stagger-on-scroll",
-    },
-    {
-        title: "Button",
+        title: "Dot Animations",
         isLabel: true,
-    },
-    {
-        title: "Text Fall Button",
-        href: components + "/text-fall-button",
-    },
-    {
-        title: "Spring Button",
-        href: components + "/spring-button",
-    },
-    {
-        title: "Other",
-        isLabel: true,
-    },
-    {
-        title: "Animated Stack",
-        href: components + "/animated-stack",
-        new: true,
-    },
-    {
-        title: "Swap",
-        href: components + "/swap",
-        new: true,
-    },
-    {
-        title: "Layered Stack",
-        href: components + "/layered-stack",
-        new: true,
-    },
-    {
-        title: "Overlay Effect",
-        href: components + "/overlay-effect",
-        new: true,
-    },
-    {
-        title: "Gradient Shadow",
-        href: components + "/gradient-shadow",
-        new: true,
-    },
-    {
-        title: "Github Star Counter",
-        href: components + "/github-star-counter",
     },
     {
         title: "Dot Loader",
@@ -132,12 +83,44 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         href: components + "/flow-builder",
     },
     {
-        title: "Draw Line Text",
-        href: components + "/draw-line-text",
+        title: "Button Components",
+        isLabel: true,
     },
     {
-        title: "Tilt Card",
-        href: components + "/tilt-card",
+        title: "Text Fall Button",
+        href: components + "/text-fall-button",
+    },
+    {
+        title: "Spring Button",
+        href: components + "/spring-button",
+    },
+    {
+        title: "Utility & Misc",
+        isLabel: true,
+    },
+    {
+        title: "Swap",
+        href: components + "/swap",
+        new: true,
+    },
+    {
+        title: "Animated Stack",
+        href: components + "/animated-stack",
+        new: true,
+    },
+    {
+        title: "Layered Stack",
+        href: components + "/layered-stack",
+        new: true,
+    },
+    {
+        title: "Gradient Shadow",
+        href: components + "/gradient-shadow",
+        new: true,
+    },
+    {
+        title: "Github Star Counter",
+        href: components + "/github-star-counter",
     },
     {
         title: "Profile Peek",
@@ -148,12 +131,33 @@ export const docsComponentNavItems: SidebarNavItem[] = [
         href: components + "/flip-reveal",
     },
     {
+        title: "Special Cases",
+        isLabel: true,
+    },
+    {
+        title: "Overlay Effect",
+        href: components + "/overlay-effect",
+        new: true,
+    },
+    {
+        title: "Reveal on Scroll",
+        href: components + "/reveal-on-scroll",
+    },
+    {
+        title: "Stagger on Scroll",
+        href: components + "/stagger-on-scroll",
+    },
+    {
         title: "Liquid Cursor",
         href: components + "/liquid-cursor",
     },
     {
         title: "Liquid Glass",
         href: components + "/liquid-glass",
+    },
+    {
+        title: "Tilt Card",
+        href: components + "/tilt-card",
     },
 ];
 
