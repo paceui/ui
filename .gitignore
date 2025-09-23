@@ -47,4 +47,4 @@ next-env.d.ts
 
 # extras
 .idea
-.velite
+.source

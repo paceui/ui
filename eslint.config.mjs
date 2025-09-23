@@ -10,15 +10,16 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-    {
-        ignores: ["node_modules/**", ".next/**", "out/**", "build/**", "next-env.d.ts"],
-    },
     ...compat.extends("next/core-web-vitals", "next/typescript"),
+    {
+        ignores: ["node_modules/**", ".next/**", "out/**", "build/**", ".source/**", "next-env.d.ts"],
+    },
     {
         rules: {
             "@typescript-eslint/ban-ts-comment": "off",
             "@next/next/no-img-element": "off",
             "react/no-unescaped-entities": "off",
+            "import/no-anonymous-default-export": "off",
         },
     },
 ];
