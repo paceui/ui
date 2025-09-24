@@ -1,26 +1,21 @@
-class VeliteWebpackPlugin {
-    static started = false;
-    apply(/** @type {import('webpack').Compiler} */ compiler) {
-        compiler.hooks.beforeCompile.tapPromise("VeliteWebpackPlugin", async () => {
-            if (VeliteWebpackPlugin.started) return;
-            VeliteWebpackPlugin.started = true;
-            const dev = compiler.options.mode === "development";
-            const { build } = await import("velite");
-            await build({ watch: dev, clean: !dev });
-        });
-    }
-}
+import { createMDX } from "fumadocs-mdx/next";
+
+const withMDX = createMDX();
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    devIndicators: false,
-    webpack: (config) => {
-        config.plugins.push(new VeliteWebpackPlugin());
-        return config;
-    },
+const config = {
+    reactStrictMode: true,
     outputFileTracingIncludes: {
-        "/": ["./components/**/*", "./demo/**/*"],
+        "/": ["./src/components/**/*", "./src/demo/**/*"],
+    },
+    async rewrites() {
+        return [
+            {
+                source: "/docs/:path*.mdx",
+                destination: "/fetch-mdx/:path*",
+            },
+        ];
     },
 };
 
-export default nextConfig;
+export default withMDX(config);
