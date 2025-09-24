@@ -70,13 +70,13 @@ const Page = () => {
                             <div className="bg-primary size-1.5 rounded-full"></div>
                             Stable
                         </div>
-                        <p className="from-foreground to-foreground/65 mt-2 w-fit bg-linear-to-r bg-clip-text text-3xl font-[650] tracking-tight text-transparent lg:text-4xl 2xl:text-5xl">
+                        <h1 className="from-foreground to-foreground/65 mt-2 w-fit bg-linear-to-r bg-clip-text text-3xl font-[650] tracking-tight text-transparent lg:text-4xl 2xl:text-5xl">
                             Components
-                        </p>
-                        <p className="text-muted-foreground mt-1 max-w-xl text-center max-sm:text-sm">
+                        </h1>
+                        <h2 className="text-muted-foreground mt-1 max-w-xl text-center max-sm:text-sm">
                             Beautiful, animated components that respond smoothly, feel natural, and elevate user
                             experience.
-                        </p>
+                        </h2>
                     </div>
                     <div className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 xl:mt-12 xl:gap-8">
                         {groupedItems.map((item, index) => (

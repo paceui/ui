@@ -29,13 +29,13 @@ export default async function Page() {
                             <div className="size-1.5 rounded-full bg-green-500"></div>
                             Live
                         </div>
-                        <p className="from-foreground to-foreground/65 mt-2 w-fit bg-linear-to-r bg-clip-text text-3xl font-[650] tracking-tight text-transparent lg:text-4xl 2xl:text-5xl">
+                        <h1 className="from-foreground to-foreground/65 mt-2 w-fit bg-linear-to-r bg-clip-text text-3xl font-[650] tracking-tight text-transparent lg:text-4xl 2xl:text-5xl">
                             Blocks
-                        </p>
-                        <p className="text-muted-foreground mt-1 max-w-xl text-center max-sm:text-sm">
+                        </h1>
+                        <h2 className="text-muted-foreground mt-1 max-w-xl text-center max-sm:text-sm">
                             Beautiful, interactive, and production-ready sections you can drop into your project with a
                             single shadcn command.
-                        </p>
+                        </h2>
                     </div>
                     <div className="mt-8 sm:mt-12 xl:mt-16">
                         {blockSections.map((block, index) => (
