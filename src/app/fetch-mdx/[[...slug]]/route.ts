@@ -4,7 +4,7 @@ import fs from "node:fs/promises";
 
 import { source } from "@/lib/source";
 
-// export const revalidate = 604800;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
     return source.generateParams();

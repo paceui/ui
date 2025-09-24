@@ -1,10 +1,11 @@
 import { DocsBody, DocsPage } from "fumadocs-ui/page";
 import { ArrowRightIcon } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
 import { ReactNode, useMemo } from "react";
 
 import { Footer } from "@/components/docs/layouts/footer";
-import { routes } from "@/lib/docs";
+import { getMetadata, routes } from "@/lib/docs";
 import { source } from "@/lib/source";
 
 type Item = {
@@ -12,6 +13,13 @@ type Item = {
     href?: string;
     items?: Item[];
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+    return getMetadata({
+        title: "Components",
+        description: "Beautiful, animated components that respond smoothly, feel natural, and elevate user experience.",
+    });
+}
 
 const Page = () => {
     const groupedItems = useMemo(() => {

@@ -8,7 +8,7 @@ import { DocsBreadcrumb } from "@/components/docs/layouts/breadcrumb";
 import { CopyMarkdown } from "@/components/docs/layouts/copy-markdown";
 import { Footer } from "@/components/docs/layouts/footer";
 import { getMDXComponents } from "@/components/docs/mdx/mdx-components";
-import { routes } from "@/lib/docs";
+import { getMetadata, routes } from "@/lib/docs";
 import { source } from "@/lib/source";
 
 export async function generateStaticParams() {
@@ -20,10 +20,10 @@ export async function generateMetadata(props: PageProps<"/docs/[[...slug]]">): P
     const page = source.getPage(params.slug);
     if (!page) notFound();
 
-    return {
+    return getMetadata({
         title: page.data.title,
         description: page.data.description,
-    };
+    });
 }
 
 export default async function Page(props: { params: Promise<{ slug?: string[] }> }) {

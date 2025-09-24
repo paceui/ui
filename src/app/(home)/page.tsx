@@ -1,4 +1,3 @@
-// import { Footer, Topbar } from "@/components/docs/layouts";
 import { Footer } from "@/components/docs/layouts/footer";
 import { Topbar } from "@/components/docs/layouts/topbar";
 import { Newsletter } from "@/components/docs/newsletter";
@@ -6,8 +5,6 @@ import { Newsletter } from "@/components/docs/newsletter";
 import { Demo } from "./components/demo";
 import { Feature } from "./components/feature";
 import { Hero } from "./components/hero";
-
-// import { docsSidebarNavItems } from "@/app/docs/menu";
 
 export default function LandingPage() {
     return (
