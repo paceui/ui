@@ -12,7 +12,8 @@ import { blockSections } from "./menu";
 export async function generateMetadata(): Promise<Metadata> {
     return getMetadata({
         title: "Blocks",
-        description: "Beautiful, interactive, and production-ready sections you can drop into your project with a single shadcn command.",
+        description:
+            "Beautiful, interactive, and production-ready sections you can drop into your project with a single shadcn command.",
     });
 }
 export default async function Page() {
